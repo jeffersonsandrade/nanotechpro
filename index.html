@@ -153,7 +153,7 @@
     </section>
 
     <!-- Services Marquee Strip -->
-    <div class="w-full border-y border-borderDarker bg-[#0a0a0a] py-6 overflow-hidden relative z-10 gs-reveal opacity-0 translate-y-4">
+    <div class="w-full border-y border-borderDarker bg-bgSurface py-6 overflow-hidden relative z-10 gs-reveal opacity-0 translate-y-4">
         <style>
             @keyframes marquee-strip {
                 0% { transform: translateX(0); }
@@ -164,114 +164,102 @@
             }
         </style>
         <!-- Fade Edges -->
-        <div class="absolute inset-y-0 left-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none"></div>
-        <div class="absolute inset-y-0 right-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-[#0a0a0a] to-transparent pointer-events-none"></div>
+        <div class="absolute inset-y-0 left-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-bgSurface to-transparent pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-bgSurface to-transparent pointer-events-none"></div>
         
         <div class="flex whitespace-nowrap animate-marquee-strip w-max shrink-0">
             <!-- First Set -->
             <div class="flex shrink-0 items-center gap-8 sm:gap-12 pr-8 sm:pr-12">
                 <!-- AMD -->
-                <img src="https://cdn.simpleicons.org/amd/9ca3af" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Intel -->
-                <img src="https://cdn.simpleicons.org/intel/9ca3af" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Nvidia -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/nvidia/9ca3af" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
+                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Asus -->
-                <img src="https://cdn.simpleicons.org/asus/9ca3af" alt="Asus" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/asus" alt="Asus" class="h-[3.5rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
-                <!-- Aorus -->
-                <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/aorus/9ca3af" alt="Aorus" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Aorus</span>
-                </div>
-                <span class="text-brand font-bold opacity-60">•</span>
-                
+                                
                 <!-- MSI -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/msi/9ca3af" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
+                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Gigabyte -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/gigabyte/9ca3af" alt="Gigabyte" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
+                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Hyper X -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/hyperx/9ca3af" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
+                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Corsair -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/corsair/9ca3af" alt="Corsair" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
+                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Cooler Master -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/coolermaster/9ca3af" alt="Cooler Master" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
+                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Kingston -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/kingstontechnology/9ca3af" alt="Kingston" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
+                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
-                <!-- Crucial -->
-                <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/crucial/9ca3af" alt="Crucial" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Crucial</span>
-                </div>
-                <span class="text-brand font-bold opacity-60">•</span>
-                
+                               
+              
                 <!-- Dell -->
-                <img src="https://cdn.simpleicons.org/dell/9ca3af" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Samsung -->
-                <img src="https://cdn.simpleicons.org/samsung/9ca3af" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Acer -->
-                <img src="https://cdn.simpleicons.org/acer/9ca3af" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Lenovo -->
-                <img src="https://cdn.simpleicons.org/lenovo/9ca3af" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- TP-Link -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/tplink/9ca3af" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
+                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Ubiquiti -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/ubiquiti/9ca3af" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
+                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
             </div>
@@ -279,107 +267,101 @@
             <!-- Duplicated Set -->
             <div class="flex shrink-0 items-center gap-8 sm:gap-12 pr-8 sm:pr-12" aria-hidden="true">
                 <!-- AMD -->
-                <img src="https://cdn.simpleicons.org/amd/9ca3af" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                                 
                 <!-- Intel -->
-                <img src="https://cdn.simpleicons.org/intel/9ca3af" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Nvidia -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/nvidia/9ca3af" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
+                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Asus -->
-                <img src="https://cdn.simpleicons.org/asus/9ca3af" alt="Asus" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/asus" alt="Asus" class="h-[3.5rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
-                <!-- Aorus -->
-                <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/aorus/9ca3af" alt="Aorus" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Aorus</span>
-                </div>
-                <span class="text-brand font-bold opacity-60">•</span>
-                
+                                
                 <!-- MSI -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/msi/9ca3af" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
+                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Gigabyte -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/gigabyte/9ca3af" alt="Gigabyte" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
+                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Hyper X -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/hyperx/9ca3af" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
+                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Corsair -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/corsair/9ca3af" alt="Corsair" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
+                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Cooler Master -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/coolermaster/9ca3af" alt="Cooler Master" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
+                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Kingston -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/kingstontechnology/9ca3af" alt="Kingston" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
+                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Crucial -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/crucial/9ca3af" alt="Crucial" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Crucial</span>
+                    <img src="https://cdn.simpleicons.org/crucial" alt="Crucial" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Crucial</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Dell -->
-                <img src="https://cdn.simpleicons.org/dell/9ca3af" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Samsung -->
-                <img src="https://cdn.simpleicons.org/samsung/9ca3af" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Acer -->
-                <img src="https://cdn.simpleicons.org/acer/9ca3af" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Lenovo -->
-                <img src="https://cdn.simpleicons.org/lenovo/9ca3af" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- TP-Link -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/tplink/9ca3af" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
+                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
                 
                 <!-- Ubiquiti -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/ubiquiti/9ca3af" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-gray-400 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
+                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
             </div>
