@@ -88,10 +88,12 @@
     </script>
 
     <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://unpkg.com">
+    <script defer src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -592,7 +594,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="assets/pc_gamer07.jpeg" alt="PC Gamer" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
+                <img src="assets/pc_gamer07.jpeg" alt="PC Gamer" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6" loading="lazy">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="gamepad-2" class="w-6 h-6 text-brand"></i></div>
@@ -617,7 +619,7 @@
 
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="assets/acer_nitro.jpg" alt="Notebooks" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
+                <img src="assets/acer_nitro.jpg" alt="Notebooks" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6" loading="lazy">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="laptop" class="w-6 h-6 text-brand"></i></div>
@@ -643,7 +645,7 @@
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <img src="assets/consultoria_ti.jpg" alt="Consultoria de TI"
-                    class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
+                    class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6" loading="lazy">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="briefcase-business" class="w-6 h-6 text-brand"></i></div>
@@ -716,7 +718,7 @@
 
                 <!-- Set 1 (Unique Items) -->
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Setup Gamer High-End</p>
@@ -725,7 +727,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Substituição de Tela</p>
@@ -734,7 +736,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Infraestrutura Corporativa</p>
@@ -743,7 +745,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Restauração de Carcaça</p>
@@ -753,7 +755,7 @@
 
                 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Manutenção Preventiva</p>
@@ -762,7 +764,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Redes para Escritórios</p>
@@ -771,7 +773,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/troca_hd.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_backup.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Recuperação de Sistema</p>
@@ -781,7 +783,7 @@
 
                 <!-- Set 2 (Duplicated for Loop) -->
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Setup Gamer High-End</p>
@@ -790,7 +792,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Substituição de Tela</p>
@@ -799,7 +801,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Infraestrutura Corporativa</p>
@@ -808,7 +810,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Restauração de Carcaça</p>
@@ -818,7 +820,7 @@
 
                 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Manutenção Preventiva</p>
@@ -827,7 +829,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Redes para Escritórios</p>
@@ -836,7 +838,7 @@
                 </div>
 
                 <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="assets/troca_hd.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <img src="assets/pc_backup.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
                         <p class="text-white text-sm md:text-base font-bold leading-tight">Recuperação de Sistema</p>
@@ -857,7 +859,7 @@
             <div
                 class="relative w-full max-w-[300px] lg:max-w-[85%] aspect-[4/5] lg:aspect-auto lg:h-1/2 max-h-[60vh] lg:max-h-none mx-auto border-b lg:border-none border-borderDarker overflow-hidden lg:self-start lg:mt-10 lg:rounded-2xl lg:shadow-lg">
                 <img src="assets/profissional.png" alt="Jefferson Andrade Silva"
-                    class="absolute inset-0 w-full h-[120%] object-cover object-top">
+                    class="absolute inset-0 w-full h-[120%] object-cover object-top" loading="lazy">
             </div>
 
             <!-- Right: Text Content -->
@@ -1022,7 +1024,7 @@
                     </div>
                     <h2
                         class="mt-4 sm:mt-5 text-2xl sm:text-4xl lg:text-5xl text-textMain tracking-tight sm:tracking-tighter font-bold">
-                        Solução Exata. Sem Enrolação.</h2>
+                        Solução Exata. Direto ao ponto.</h2>
                 </div>
                 <p
                     class="text-sm sm:text-base lg:text-lg text-textMuted max-w-full sm:max-w-[55ch] text-center sm:text-left mx-auto sm:mx-0">
@@ -1352,7 +1354,7 @@
                     <div class="my-6 relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl overflow-hidden ring-1 ring-borderDarker shadow-xl group">
                         <!-- Gradient overlay effect -->
                         <div class="absolute inset-0 bg-gradient-to-tr from-brand/30 to-transparent mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0"></div>
-                        <img src="assets/form.jpg" alt="Equipamentos de TI" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                        <img src="assets/form.jpg" alt="Equipamentos de TI" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     </div>
 
                     <h2 class="text-3xl sm:text-4xl xl:text-5xl text-textMain tracking-tighter font-bold leading-tight">Problemas na sua máquina ou falhas na TI da empresa?</h2>
@@ -1550,11 +1552,11 @@
 
             <div class="flex flex-col justify-center items-center gap-6 text-[0.85rem] text-textMuted text-center">
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-                    class="group flex w-full items-center justify-center px-6 gap-2 rounded-[0.625rem] text-sm font-bold uppercase leading-[16.41px] text-white transition-colors md:w-fit disabled:cursor-not-allowed disabled:opacity-75 py-4 max-h-13 bg-transparent hover:bg-gray-800">
-                    <span class="text-textMuted text-[0.85rem] leading-relaxed">Voltar ao topo</span>
+                    class="group flex w-full items-center justify-center px-6 gap-2 rounded-[0.625rem] text-sm font-bold uppercase leading-[16.41px] text-white transition-colors md:w-fit disabled:cursor-not-allowed disabled:opacity-75 py-4 max-h-13 bg-transparent hover:text-brand hover:bg-brand">
+                    <span class="text-black dark:text-white text-[0.85rem] leading-relaxed group-hover:text-white transition-colors">Voltar ao topo</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="h-5 w-5 text-gray-200">
+                        class="h-5 w-5 text-black dark:text-white group-hover:text-white transition-colors">
                         <path d="m5 12 7-7 7 7"></path>
                         <path d="M12 19V5"></path>
                     </svg>
@@ -1565,11 +1567,11 @@
     </footer>
 
     <!-- GSAP Scripts & Theme Toggle Logic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- External JS -->
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
 
     <!-- Cookie Banner -->
     <div id="cookie-banner"
