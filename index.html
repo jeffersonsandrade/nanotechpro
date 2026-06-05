@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NanoTech Pro Tecnologia | Alta Performance e Infraestrutura Profissional - PR</title>
-    <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
+<title>NanoTech Pro | PC Gamer, Notebook e Consultoria de TI em Jacarezinho e Santo Antônio da Platina</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Especialistas em PCs Gamer e notebooks. Montagem, manutenção, upgrades e consultoria de TI com atendimento em Jacarezinho e Santo Antônio da Platina - PR.">
+    <meta name="keywords" content="PC Gamer, Manutenção de Computadores, Conserto de Notebook, Consultoria de TI, Redes, Cabeamento Estruturado, Jacarezinho, Santo Antônio da Platina, PR">
+    <meta name="author" content="Jefferson Andrade Silva">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nanotechpro.com.br/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nanotechpro.com.br/">
+    <meta property="og:title" content="NanoTech Pro | PC Gamer, Notebook e Consultoria de TI">
+    <meta property="og:description" content="Especialistas em PCs Gamer e notebooks. Montagem, manutenção, upgrades e consultoria de TI com atendimento em Jacarezinho e Santo Antônio da Platina - PR.">
+    <meta property="og:image" content="https://nanotechpro.com.br/assets/profissional.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nanotechpro.com.br/">
+    <meta property="twitter:title" content="NanoTech Pro | PC Gamer, Notebook e Consultoria de TI">
+    <meta property="twitter:description" content="Especialistas em PCs Gamer e notebooks. Montagem, manutenção, upgrades e consultoria de TI com atendimento em Jacarezinho e Santo Antônio da Platina - PR.">
+    <meta property="twitter:image" content="https://nanotechpro.com.br/assets/profissional.png">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NanoTech Pro Tecnologia",
+      "image": "https://nanotechpro.com.br/assets/profissional.png",
+      "@id": "https://nanotechpro.com.br/",
+      "url": "https://nanotechpro.com.br/",
+      "telephone": "+5543991059128",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua João Abujanra, 1685 - Maria Estela",
+        "addressLocality": "Jacarezinho",
+        "addressRegion": "PR",
+        "postalCode": "86400-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.1601,
+        "longitude": -49.9765
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://wa.me/5543991059128"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Jefferson Andrade Silva"
+      },
+      "description": "Serviços especializados de montagem e manutenção de PCs Gamer, Notebooks e Consultoria de TI em Jacarezinho e região.",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
+
     <!-- Script Anti-FOUC para carregar o tema antes da renderização -->
     <script>
         // Define o modo escuro (dark) como padrão absoluto. 
@@ -19,14 +89,15 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind Config com Variáveis Dinâmicas -->
     <script>
@@ -50,6 +121,15 @@
                     },
                     fontFamily: {
                         sans: ['Manrope', 'sans-serif'],
+                    },
+                    animation: {
+                        'text-gradient': 'text-gradient 4s ease infinite',
+                    },
+                    keyframes: {
+                        'text-gradient': {
+                            '0%, 100%': { 'background-position': '0% 50%' },
+                            '50%': { 'background-position': '100% 50%' },
+                        }
                     }
                 }
             }
@@ -59,6 +139,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="relative selection:bg-brand selection:text-white">
 
     <!-- Header -->
@@ -67,39 +148,56 @@
             <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
                 <div class="w-2 h-6 bg-brand rounded-sm"></div>
-                <span class="font-bold text-xl tracking-tight text-textMain uppercase">Nano<span class="text-brand">Tech</span> Pro <span class="text-sm font-medium text-textMuted normal-case ml-1">Tecnologia</span></span>
+                <span class="font-bold text-xl tracking-tight text-textMain uppercase">Nano<span
+                        class="text-brand">Tech</span> Pro <span
+                        class="text-sm font-medium text-textMuted normal-case ml-1">Tecnologia</span></span>
             </a>
 
             <!-- Desktop Nav -->
             <div class="hidden lg:flex items-center gap-8">
                 <nav class="flex gap-8 items-center w-full">
-                    <a href="#hero-section" class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
+                    <a href="#hero-section"
+                        class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
                         Início
-                        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
                     </a>
-                    <a href="#expertise" class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
+                    <a href="#expertise"
+                        class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
                         Soluções
-                        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
                     </a>
-                    <a href="#processo" class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
-                        Processo
-                        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
-                    </a>
-                    <a href="#portfolio" class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
+                    <a href="#portfolio"
+                        class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
                         Resultados
-                        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
                     </a>
-                    <a href="#faq" class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
+                    <a href="#processo"
+                        class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
+                        Processo
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
+                    </a>
+                    <a href="#faq"
+                        class="relative text-sm font-medium text-textMuted hover:text-textMain transition-colors duration-300 group py-1">
                         Perguntas Frequentes
-                        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-[2px] bg-brand transition-all duration-300 ease-out group-hover:w-full rounded-full shadow-[0_0_8px_rgba(124,58,237,0.8)]"></span>
                     </a>
                 </nav>
                 <div class="flex items-center gap-5 border-l border-borderColor pl-6">
-                    <button id="theme-toggle-desktop" class="text-textMuted hover:text-brand transition-colors p-2 rounded-lg bg-bgSurface2 border border-borderColor">
-                        <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
-                        <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+                    <button id="theme-toggle-desktop" aria-label="Alternar modo escuro"
+                        class="relative inline-flex h-7 w-14 items-center rounded-[10px] bg-bgSurface2 border border-borderColor transition-colors dark:bg-[#cbd5e1] hover:border-brand/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">
+                        <span
+                            class="inline-flex items-center justify-center h-5 w-5 transform rounded-[8px] bg-bgSurface border border-borderColor dark:border-transparent transition-transform duration-300 translate-x-1 dark:translate-x-8 shadow-sm dark:bg-brand">
+                            <i data-lucide="moon" class="w-3 h-3 text-textMuted block dark:hidden"></i>
+                            <i data-lucide="sun" class="w-3 h-3 text-white hidden dark:block"></i>
+                        </span>
                     </button>
-                    <a href="#confianca" class="bg-brand hover:bg-brand-light text-white px-6 py-2.5 text-sm font-bold transition-all duration-300 flex items-center gap-2 rounded-lg shadow-[0_0_15px_rgba(124,58,237,0.3)] whitespace-nowrap">
+                    <a href="#confianca"
+                        class="bg-brand hover:bg-brand-light text-white px-6 py-2.5 text-sm font-bold transition-all duration-300 flex items-center gap-2 rounded-lg shadow-[0_0_15px_rgba(124,58,237,0.3)] whitespace-nowrap">
                         Falar conosco
                     </a>
                 </div>
@@ -115,334 +213,370 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden z-10" id="hero-section">
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden z-10"
+        id="hero-section">
         <div class="absolute inset-0 pointer-events-none grid-bg z-0"></div>
         <!-- Ambient Glow -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-brand/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-brand/10 rounded-full blur-[100px] pointer-events-none z-0">
+        </div>
 
-        <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col justify-center items-center text-center scroll-blur-target" id="hero-content">
-            
-            <div class="gs-hero opacity-0 translate-y-8 inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-8 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
-                Sejam bem-vindos
-                <span class="relative flex h-2 w-2 ml-1">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
-                </span>
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center lg:items-stretch scroll-blur-target"
+            id="hero-content">
+
+            <!-- Left: Text Content -->
+            <div class="flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:py-10">
+                <div
+                    class="gs-hero opacity-0 translate-y-8 inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-8 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
+                    Sejam bem-vindos
+                    <span class="relative flex h-2 w-2 ml-1">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                    </span>
+                </div>
+
+                <h1 class="gs-hero opacity-0 translate-y-8 font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tight text-textMain mb-6 max-w-2xl transition-all duration-75 ease-out will-change-transform"
+                    id="hero-title">
+                    Tecnologia para Gamers, <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-textMuted via-brand to-textMain animate-text-gradient bg-[length:200%_auto]">Profissionais
+                        e Empresas.</span>
+                </h1>
+
+                <p
+                    class="gs-hero opacity-0 translate-y-8 text-textMuted text-lg md:text-xl max-w-xl font-light leading-relaxed mb-10 mr-auto ml-auto lg:mx-0">
+                    Alta performance para gamers, suporte especializado para notebooks e consultoria de TI para
+                    empresas. <br>Qualidade garantida com as melhores marcas do mercado.
+                </p>
+
+                <div
+                    class="gs-hero opacity-0 translate-y-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full lg:w-auto mt-auto lg:mt-0">
+                    <a href="#confianca"
+                        class="w-full sm:w-auto px-8 py-4 bg-brand hover:bg-brand-light text-white text-sm font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(124,58,237,0.4)]">
+                        Entre em contato
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#portfolio"
+                        class="w-full sm:w-auto px-8 py-4 border border-borderColor text-textMain text-sm font-bold rounded-lg hover:bg-bgSurface2 transition-colors duration-300 flex items-center justify-center gap-2 group">
+                        Ver Casos de Sucesso
+                        <i data-lucide="play-circle" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
             </div>
 
-            <h1 class="gs-hero opacity-0 translate-y-8 font-bold text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-textMain mb-6 max-w-6xl transition-all duration-75 ease-out will-change-transform" id="hero-title">
-                Tecnologia para Gamers, <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-textMuted to-textMain">Profissionais e Empresas.</span>
-            </h1>
-
-            <p class="gs-hero opacity-0 translate-y-8 text-textMuted text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-10 mr-auto ml-auto">
-                Especialistas em reviver e otimizar. Da manutenção extrema do seu PC Gamer ou Notebook à estabilidade ininterrupta da sua rede corporativa. Resultados tangíveis e imediatos.
-            </p>
-
-            <div class="gs-hero opacity-0 translate-y-8 flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-                <a href="#confianca" class="w-full sm:w-auto px-8 py-4 bg-brand hover:bg-brand-light text-white text-sm font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(124,58,237,0.4)]">
-                    Entre em contato
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 border border-borderColor text-textMain text-sm font-bold rounded-lg hover:bg-bgSurface2 transition-colors duration-300 flex items-center justify-center gap-2 group">
-                    Ver Casos de Sucesso
-                    <i data-lucide="play-circle" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
-                </a>
+            <!-- Right: Video Container -->
+            <div
+                class="gs-hero opacity-0 translate-y-8 relative w-full aspect-[4/5] lg:aspect-auto lg:h-full rounded-2xl overflow-hidden border border-borderDarker shadow-2xl group">
+                <video src="assets/hero_gamer.mp4" autoplay loop playsinline muted
+                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video>
+                <!-- Glow/Sombra sobre o vídeo -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-bgBase/60 via-transparent to-transparent pointer-events-none">
+                </div>
+                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 pointer-events-none"></div>
             </div>
         </div>
     </section>
 
     <!-- Services Marquee Strip -->
-    <div class="w-full border-y border-borderDarker bg-bgSurface py-6 overflow-hidden relative z-10 gs-reveal opacity-0 translate-y-4">
+    <div
+        class="w-full border-y border-borderDarker bg-bgSurface py-6 overflow-hidden relative z-10 gs-reveal opacity-0 translate-y-4">
         <style>
             @keyframes marquee-strip {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-50%); }
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
             }
+
             .animate-marquee-strip {
                 animation: marquee-strip 40s linear infinite;
             }
         </style>
         <!-- Fade Edges -->
-        <div class="absolute inset-y-0 left-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-bgSurface to-transparent pointer-events-none"></div>
-        <div class="absolute inset-y-0 right-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-bgSurface to-transparent pointer-events-none"></div>
-        
+        <div
+            class="absolute inset-y-0 left-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-bgSurface to-transparent pointer-events-none">
+        </div>
+        <div
+            class="absolute inset-y-0 right-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-bgSurface to-transparent pointer-events-none">
+        </div>
+
         <div class="flex whitespace-nowrap animate-marquee-strip w-max shrink-0">
             <!-- First Set -->
             <div class="flex shrink-0 items-center gap-8 sm:gap-12 pr-8 sm:pr-12">
                 <!-- AMD -->
-                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Intel -->
-                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Nvidia -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
+                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Asus -->
-                <img src="https://cdn.simpleicons.org/asus" alt="Asus" class="h-[3.5rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/asus" alt="Asus"
+                    class="h-[3.5rem] object-contain dark:invert dark:brightness-200"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
-                                
+
+
                 <!-- MSI -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
                     <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Gigabyte -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
+                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Hyper X -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
+                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper
+                        X</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Corsair -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
+                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Cooler Master -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
+                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler
+                        Master</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Kingston -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
+                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                               
-              
+
+
                 <!-- Dell -->
-                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Samsung -->
-                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Acer -->
-                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Lenovo -->
-                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- TP-Link -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
+                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Ubiquiti -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
+                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
             </div>
-            
+
             <!-- Duplicated Set -->
             <div class="flex shrink-0 items-center gap-8 sm:gap-12 pr-8 sm:pr-12" aria-hidden="true">
                 <!-- AMD -->
-                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/amd" alt="AMD" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                                
+
                 <!-- Intel -->
-                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/intel" alt="Intel" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Nvidia -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
+                    <img src="https://cdn.simpleicons.org/nvidia" alt="Nvidia" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Nvidia</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Asus -->
-                <img src="https://cdn.simpleicons.org/asus" alt="Asus" class="h-[3.5rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/asus" alt="Asus"
+                    class="h-[3.5rem] object-contain dark:invert dark:brightness-200"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
-                                
+
+
                 <!-- MSI -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
+                    <img src="https://cdn.simpleicons.org/msi" alt="MSI" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
                     <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">MSI</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Gigabyte -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
+                    <img src="https://cdn.simpleicons.org/gigabyte" alt="Gigabyte"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Gigabyte</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Hyper X -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper X</span>
+                    <img src="https://cdn.simpleicons.org/hyperx" alt="Hyper X" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Hyper
+                        X</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Corsair -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
+                    <img src="https://cdn.simpleicons.org/corsair" alt="Corsair"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Corsair</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Cooler Master -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler Master</span>
+                    <img src="https://cdn.simpleicons.org/coolermaster" alt="Cooler Master"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Cooler
+                        Master</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Kingston -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston" class="h-[1.8rem] object-contain dark:invert dark:brightness-200" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
+                    <img src="https://cdn.simpleicons.org/kingstontechnology" alt="Kingston"
+                        class="h-[1.8rem] object-contain dark:invert dark:brightness-200"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Kingston</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Crucial -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/crucial" alt="Crucial" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Crucial</span>
+                    <img src="https://cdn.simpleicons.org/crucial" alt="Crucial" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Crucial</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Dell -->
-                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/dell" alt="Dell" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Samsung -->
-                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/samsung" alt="Samsung" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Acer -->
-                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/acer" alt="Acer" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Lenovo -->
-                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain" onerror="this.style.display='none'">
+                <img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" class="h-[3.5rem] object-contain"
+                    onerror="this.style.display='none'">
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- TP-Link -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
+                    <img src="https://cdn.simpleicons.org/tplink" alt="TP-Link" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">TP-Link</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
-                
+
                 <!-- Ubiquiti -->
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain" onerror="this.style.display='none'">
-                    <span class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
+                    <img src="https://cdn.simpleicons.org/ubiquiti" alt="Ubiquiti" class="h-[1.8rem] object-contain"
+                        onerror="this.style.display='none'">
+                    <span
+                        class="text-textMuted font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Ubiquiti</span>
                 </div>
                 <span class="text-brand font-bold opacity-60">•</span>
             </div>
         </div>
     </div>
 
-    <!-- Profissional Section -->
-    <section class="relative z-10 w-full mt-16 mb-16 gs-reveal opacity-0 translate-y-10">
-        <div class="w-full bg-bgSurface border-y border-borderDarker grid grid-cols-1 lg:grid-cols-[35%_65%] shadow-2xl">
-            
-            <!-- Left: Image Container (Edge to Edge) -->
-            <div class="relative w-full max-w-[450px] lg:max-w-none aspect-[3/4] lg:aspect-auto lg:h-auto max-h-[80vh] lg:max-h-none mx-auto border-b lg:border-b-0 lg:border-r border-borderDarker overflow-hidden">
-                <img src="assets/profissional.png" alt="Jefferson Andrade Silva" class="absolute inset-0 w-full h-full object-cover object-top">
-            </div>
-
-            <!-- Right: Text Content -->
-            <div class="relative flex flex-col justify-center w-full p-6 sm:p-8 lg:p-10 xl:p-12 overflow-hidden">
-                <div class="relative z-10">
-                    <!-- Tag -->
-                    <div class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-4 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
-                        Conheça o Profissional
-                        <span class="relative flex h-2 w-2 ml-1">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
-                        </span>
-                    </div>
-                    
-                    <!-- Title -->
-                    <h2 class="text-3xl sm:text-4xl font-bold text-textMain tracking-tight leading-[1.1] mb-4">
-                        Jefferson Andrade Silva
-                    </h2>
-                    
-                    <!-- Content -->
-                    <p class="text-textMuted text-sm sm:text-base text-justify leading-relaxed mb-6 max-w-2xl">
-                        Profissional especializado em Tecnologia da Informação, com mais de 15 anos de experiência nas áreas de TI e Telecomunicações, atuando no desenvolvimento e implementação de soluções tecnológicas com foco em desempenho, segurança e eficiência operacional. Atende usuários, gamers, profissionais e empresas que buscam serviços com qualidade, confiabilidade e excelência técnica.
-                    </p>
-
-                    <!-- Academic Formation -->
-                    <p class="text-textMain font-bold text-sm sm:text-[15px] mb-3">Possui formação acadêmica em:</p>
-                    <div class="flex flex-wrap gap-2 sm:gap-2.5 mb-8">
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Bacharelado em TI</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Tecnologia em Redes</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de Projetos</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de TI</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Pós em Administração de Redes</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[13px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Pós em Engenharia de Software</span>
-                    </div>
-
-                    <!-- Services -->
-                    <p class="text-textMain font-bold text-sm sm:text-[15px] mb-3">Serviços especializados:</p>
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Montagem de PCs Gamer de alta performance</li>
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Manutenção e upgrade de computadores e notebooks</li>
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Diagnóstico e reparos especializados</li>
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Formatação e otimização de sistemas</li>
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Projetos de cabeamento estruturado</li>
-                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Consultoria e suporte técnico em TI</li>
-                    </ul>
-
-                    <!-- Highlighted Box -->
-                    <div class="border-l-2 border-[#b366ff] bg-brand/5 p-4 sm:p-5 rounded-r-lg max-w-xl">
-                        <p class="text-textMain font-bold text-[14.5px] sm:text-[15.5px] leading-snug">
-                            Tecnologia aplicada com eficiência, estabilidade e soluções que agregam valor para usuários e empresas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <div class="line-divider"></div>
-
     <!-- Expertise Section -->
-    <section id="expertise" class="relative z-10 sm:px-6 lg:px-8 max-w-7xl mt-20 mr-auto mb-20 ml-auto pt-20 pr-4 pb-20 pl-4 gs-reveal opacity-0 translate-y-10">
+    <section id="expertise"
+        class="relative z-10 sm:px-6 lg:px-8 max-w-7xl mt-20 mr-auto mb-20 ml-auto pt-20 pr-4 pb-20 pl-4 gs-reveal opacity-0 translate-y-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             <div class="space-y-3">
-                <div class="inline-flex w-max gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full pt-1.5 pr-4 pb-1.5 pl-4 items-center">
+                <div
+                    class="inline-flex w-max gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full pt-1.5 pr-4 pb-1.5 pl-4 items-center">
                     Áreas de atuação
                     <span class="relative flex h-2 w-2 ml-1">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
                     </span>
                 </div>
@@ -451,100 +585,516 @@
                 </h2>
             </div>
             <p class="sm:text-lg text-justify text-base text-textMuted max-w-[85ch]">
-                A NanoTech Pro organiza seus serviços em três frentes: PC Gamer, Notebooks e Consultoria de TI. Assim, cada cliente encontra rapidamente a solução certa para seu equipamento, setup ou empresa.
+                A NanoTech Pro atende clientes residenciais e empresariais em Jacarezinho e Santo Antônio da Platina, oferecendo manutenção de computadores, notebooks, montagem de PCs Gamer, cabeamento estruturado, infraestrutura de redes e consultoria especializada em TI.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <article class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=800&auto=format&fit=crop" alt="PC Gamer" class="w-full h-48 object-cover rounded-xl mb-6">
-                <div class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6"><i data-lucide="gamepad-2" class="w-6 h-6 text-brand"></i></div>
+            <article
+                class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <img src="assets/pc_gamer10.jpeg" alt="PC Gamer" class="w-full h-48 object-cover rounded-xl mb-6">
+                <div
+                    class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
+                    <i data-lucide="gamepad-2" class="w-6 h-6 text-brand"></i></div>
                 <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold mb-3">PC Gamer</p>
                 <h3 class="text-2xl font-bold text-textMain mb-4">Performance máxima para seu setup.</h3>
-                <p class="text-textMuted text-justify text-sm leading-relaxed mb-6">Montagem, manutenção e otimização de PCs Gamer para quem busca mais FPS, menor temperatura, estabilidade e maior vida útil do equipamento.</p>
+                <p class="text-textMuted text-justify text-sm leading-relaxed mb-6">Montagem, manutenção e otimização de
+                    PCs Gamer para quem busca mais FPS, menor temperatura, estabilidade e maior vida útil do
+                    equipamento.</p>
                 <ul class="space-y-3 text-sm text-textMain">
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Montagem personalizada</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Upgrade de hardware</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Limpeza técnica e troca térmica</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Water cooler e otimização</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Diagnóstico avançado</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Montagem personalizada</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Upgrade de hardware</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Limpeza técnica e troca térmica</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Water cooler e otimização</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Diagnóstico avançado</li>
                 </ul>
             </article>
 
-            <article class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop" alt="Notebooks" class="w-full h-48 object-cover rounded-xl mb-6">
-                <div class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6"><i data-lucide="laptop" class="w-6 h-6 text-brand"></i></div>
+            <article
+                class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <img src="assets/acer_nitro.jpg" alt="Notebooks" class="w-full h-48 object-cover rounded-xl mb-6">
+                <div
+                    class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
+                    <i data-lucide="laptop" class="w-6 h-6 text-brand"></i></div>
                 <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold mb-3">Notebooks</p>
                 <h3 class="text-2xl font-bold text-textMain mb-4">Seu notebook rápido, seguro e confiável.</h3>
-                <p class="text-textMuted text-justify text-sm leading-relaxed mb-6">Serviços especializados para notebooks domésticos, profissionais e corporativos, com foco em velocidade, produtividade e redução de travamentos.</p>
+                <p class="text-textMuted text-justify text-sm leading-relaxed mb-6">Serviços especializados para
+                    notebooks domésticos, profissionais e corporativos, com foco em velocidade, produtividade e redução
+                    de travamentos.</p>
                 <ul class="space-y-3 text-sm text-textMain">
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Upgrade SSD e memória</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Formatação e configuração</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Troca de tela e teclado</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Limpeza interna</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Diagnóstico de hardware</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Upgrade SSD e memória</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Formatação e configuração</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Troca de tela e teclado</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Limpeza interna</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Diagnóstico de hardware</li>
                 </ul>
             </article>
 
-            <article class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="https://plus.unsplash.com/premium_photo-1764705683048-4f416de4fb67?q=80&w=1169&auto=format&fit=crop" alt="Consultoria de TI" class="w-full h-48 object-cover rounded-xl mb-6">
-                <div class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6"><i data-lucide="briefcase-business" class="w-6 h-6 text-brand"></i></div>
+            <article
+                class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <img src="assets/consultoria_ti.jpg" alt="Consultoria de TI"
+                    class="w-full h-48 object-cover rounded-xl mb-6">
+                <div
+                    class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
+                    <i data-lucide="briefcase-business" class="w-6 h-6 text-brand"></i></div>
                 <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold mb-3">Consultoria de TI</p>
-                <h3 class="text-2xl font-bold text-textMain mb-4">Tecnologia que reduz custos e aumenta disponibilidade.</h3>
-                <p class="text-textMuted text-justify  text-sm leading-relaxed mb-6">Consultoria para empresas que precisam de infraestrutura organizada, redes estáveis, menos paradas e melhor aproveitamento dos recursos de TI.</p>
+                <h3 class="text-2xl font-bold text-textMain mb-4">Tecnologia que reduz custos e aumenta disponibilidade.
+                </h3>
+                <p class="text-textMuted text-justify  text-sm leading-relaxed mb-6">Consultoria para empresas que
+                    precisam de infraestrutura organizada, redes estáveis, menos paradas e melhor aproveitamento dos
+                    recursos de TI.</p>
                 <ul class="space-y-3 text-sm text-textMain">
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Cabeamento estruturado e racks</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Redes corporativas e Wi-Fi empresarial</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Aumento da disponibilidade</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Inventário e planejamento tecnológico</li>
-                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand flex-shrink-0"></i>Backup, segurança e redução de custos</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Backup em nuvem</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Cabeamento estruturado padronizado</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Continuidade operacional</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Inventário e planejamento tecnológico</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Otimização de redes Wi-Fi</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Redução de custos</li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2"
+                            class="w-5 h-5 text-brand flex-shrink-0"></i>Suporte residencial e empresarial</li>
                 </ul>
             </article>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-14 border-t border-borderColor pt-10" id="stats-section">
-            <div class="space-y-1"><p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="15" data-suffix="+">0</p><p class="text-sm text-textMain font-medium">Anos de experiência</p><p class="text-xs text-textMuted">Atuação em TI e Telecom</p></div>
-            <div class="space-y-1"><p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="500" data-suffix="+">0</p><p class="text-sm text-textMain font-medium">Equipamentos atendidos</p><p class="text-xs text-textMuted">PCs, notebooks e empresas</p></div>
-            <div class="space-y-1"><p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="3" data-suffix="">0</p><p class="text-sm text-textMain font-medium">Áreas de atuação</p><p class="text-xs text-textMuted">Gamer, notebook e consultoria</p></div>
-            <div class="space-y-1"><p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="100" data-suffix="%">0</p><p class="text-sm text-textMain font-medium">Foco em resultado</p><p class="text-xs text-textMuted">Desempenho e estabilidade</p></div>
+    </section>
+
+    <!-- Trabalhos Executados / Portfolio -->
+    <section id="portfolio" class="py-32 bg-bgSurface2 relative z-10 border-b border-borderColor overflow-hidden">
+        <div class="text-center mb-16 gs-reveal opacity-0 translate-y-10 px-6 flex flex-col items-center">
+            <div
+                class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-6 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
+                Casos de Sucesso
+                <span class="relative flex h-2 w-2 ml-1">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                </span>
+            </div>
+            <h3 class="font-bold text-3xl md:text-4xl text-textMain tracking-tight">Resultados que Falam por Si.</h3>
+            <p class="text-textMuted text-sm md:text-base mt-4 max-w-2xl mx-auto">Assista e comprove o nível de
+                exigência técnica que aplicamos. O que para alguns é perfeccionismo, para nós é o padrão.</p>
+        </div>
+
+        <div class="relative py-4 group gs-reveal opacity-0 translate-y-10">
+            <style>
+                @keyframes marquee {
+                    from {
+                        transform: translateX(0);
+                    }
+
+                    to {
+                        transform: translateX(-50%);
+                    }
+                }
+            </style>
+            <!-- Fade Edges -->
+            <div
+                class="absolute inset-y-0 left-0 w-16 md:w-48 z-10 bg-gradient-to-r from-bgSurface2 to-transparent pointer-events-none">
+            </div>
+            <div
+                class="absolute inset-y-0 right-0 w-16 md:w-48 z-10 bg-gradient-to-l from-bgSurface2 to-transparent pointer-events-none">
+            </div>
+
+            <div class="flex gap-4 md:gap-6 w-max hover:[animation-play-state:paused] transition-all duration-300"
+                style="animation: marquee 40s linear infinite;">
+
+                <!-- Set 1 (Original Items) -->
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/pc_gamer02.jpeg" alt="Manutenção PC Gamer High-End"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                        
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Formatação, backup e limpeza
+                            completa.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/troca_lcd.jpeg" alt="Reparo de Notebook"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                      
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Carcaça</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de carcaças e
+                            restauração de notebooks.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Rack_piso02.jpg" alt="Cabeamento Estruturado"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
+                            de rede gigabit para alto tráfego.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção PC Gamer High-End"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção Preventiva</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, troca de pasta
+                            térmica e organização de cabos para máxima performance.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Upgrade de Notebook"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Upgrade de hardware</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Troca de HD para SSD e formatação
+                            do notebook.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Rack_parede02.jpeg" alt="Cabeamento Estruturado"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
+                            de rede gigabit para alto tráfego.</p>
+                    </div>
+                </div>
+
+                <!-- Set 2 (Duplicated for Loop) -->
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/pc_gamer02.jpeg" alt="Manutenção PC Gamer High-End"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Formatação, backup e limpeza
+                            completa.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/troca_lcd.jpeg" alt="Reparo de Notebook"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                        
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Carcaça</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de carcaças e
+                            restauração de notebooks.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/Rack_piso02.jpg" alt="Cabeamento Estruturado"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                        
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura empresarial</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e cabeamento estruturado.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção PC Gamer High-End"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                       
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção Preventiva</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, troca de pasta
+                            térmica e organização de cabos para máxima performance.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Upgrade de Notebook"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                      
+                        <p class="text-white text-base md:text-lg font-bold leading-tight">Upgrade de hardware</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Troca de HD para SSD e formatação
+                            do notebook.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
+                    aria-hidden="true">
+                    <img src="assets/Rack_parede02.jpeg" alt="Cabeamento Estruturado"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                     
+                        <p class="text-purple-500 text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
+                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
+                            de rede gigabit para alto tráfego.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section id="processo" class="sm:px-6 lg:px-8 sm:mt-24 lg:mt-32 sm:mb-24 lg:mb-32 sm:pt-12 lg:pt-16 sm:pr-6 sm:pb-12 lg:pb-16 sm:pl-6 mt-16 mr-auto mb-16 ml-auto pt-8 pr-4 pb-8 pl-4 gs-reveal opacity-0 translate-y-10 relative z-10 border-y border-borderColor bg-bgSurface/20">
-        <style>
-            #processo .ring-2 { transition: all 0.3s ease; cursor: pointer; }
-            #processo .ring-2:hover { transform: scale(1.03); box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); }
-            #processo .ring-2 i { transition: transform 0.3s ease; }
-            #processo .ring-2:hover i { transform: scale(1.2); }
-        </style>
-        <div class="relative overflow-hidden sm:p-8 lg:p-12 bg-bgSurface max-w-7xl ring-borderDarker ring-1 rounded-2xl sm:rounded-3xl mx-auto pt-6 sm:pt-8 pr-4 sm:pr-8 pb-6 sm:pb-8 pl-4 sm:pl-8">
-            <div class="flex flex-col gap-6 sm:gap-8 mb-8 sm:mb-12">
-                <div class="text-center sm:text-left flex flex-col items-center sm:items-start">
-                    <div class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full pt-1.5 pr-4 pb-1.5 pl-4 items-center w-max">
-                        Como Trabalhamos
+    <!-- Profissional Section -->
+    <section class="relative z-10 w-full mt-16 mb-16 px-4 sm:px-6 lg:px-8 gs-reveal opacity-0 translate-y-10">
+        <div
+            class="w-full max-w-7xl mx-auto bg-bgSurface border border-borderDarker rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-[25%_75%] shadow-2xl">
+
+            <!-- Left: Image Container -->
+            <div
+                class="relative w-full max-w-[300px] lg:max-w-[85%] aspect-[4/5] lg:aspect-auto lg:h-1/2 max-h-[60vh] lg:max-h-none mx-auto border-b lg:border-none border-borderDarker overflow-hidden lg:self-start lg:mt-10 lg:rounded-2xl lg:shadow-lg">
+                <img src="assets/profissional.png" alt="Jefferson Andrade Silva"
+                    class="absolute inset-0 w-full h-full object-cover object-top">
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="relative flex flex-col justify-center w-full p-6 sm:p-8 lg:p-10 xl:p-12 overflow-hidden">
+                <div class="relative z-10">
+                    <!-- Tag -->
+                    <div
+                        class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-4 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
+                        Conheça o Profissional
                         <span class="relative flex h-2 w-2 ml-1">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
                         </span>
                     </div>
-                    <h2 class="mt-4 sm:mt-5 text-2xl sm:text-4xl lg:text-5xl text-textMain tracking-tight sm:tracking-tighter font-bold">Solução Exata. Sem Enrolação.</h2>
+
+                    <!-- Title -->
+                    <h2 class="text-3xl sm:text-4xl font-bold text-textMain tracking-tight leading-[1.1] mb-4">
+                        Jefferson Andrade Silva
+                    </h2>
+
+                    <!-- Content -->
+                    <p class="text-textMuted text-sm sm:text-base text-justify leading-relaxed mb-6 max-w-2xl">
+                        Profissional especializado em Tecnologia da Informação, com mais de 15 anos de experiência nas
+                        áreas de TI e Telecomunicações, atuando no desenvolvimento e implementação de soluções
+                        tecnológicas com foco em desempenho, segurança e eficiência operacional. Atende usuários,
+                        gamers, profissionais e empresas que buscam serviços com qualidade, confiabilidade e excelência
+                        técnica.
+                    </p>
+
+                    <!-- Academic Formation -->
+                    <p class="text-textMain font-bold text-sm sm:text-[15px] mb-3">Possui formação acadêmica em:</p>
+                    <div class="flex flex-wrap gap-2 sm:gap-2.5 mb-8">
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Bacharelado em
+                            TI</span>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Tecnologia em
+                            Redes</span>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de
+                            Projetos</span>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de
+                            TI</span>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Pós em
+                            Administração de Redes</span>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Pós em Engenharia
+                            de Software</span>
+                    </div>
+
+                    <!-- Services -->
+                    <p class="text-textMain font-bold text-sm sm:text-[15px] mb-3">Serviços especializados:</p>
+                    <ul class="space-y-2.5 mb-8">
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Montagem de PCs Gamer
+                            de alta performance</li>
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Manutenção e upgrade de
+                            computadores e notebooks</li>
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Diagnóstico e reparos
+                            especializados</li>
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Formatação e otimização
+                            de sistemas</li>
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Projetos de cabeamento
+                            estruturado</li>
+                        <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Consultoria e suporte
+                            técnico em TI</li>
+                    </ul>
+
+                    <!-- Highlighted Box -->
+                    <div class="border-l-2 border-[#b366ff] bg-brand/5 p-4 sm:p-5 rounded-r-lg max-w-xl">
+                        <p class="text-textMain font-bold text-[14.5px] sm:text-[15.5px] leading-snug">
+                            Tecnologia aplicada com eficiência, estabilidade e soluções que agregam valor para usuários
+                            e empresas.
+                        </p>
+                    </div>
                 </div>
-                <p class="text-sm sm:text-base lg:text-lg text-textMuted max-w-full sm:max-w-[55ch] text-center sm:text-left mx-auto sm:mx-0">
-                    Não trocamos peças por tentativa e erro. Nosso método garante que o verdadeiro defeito seja encontrado e resolvido de forma definitiva, para você não ter mais dor de cabeça.
+            </div>
+
+        </div>
+    </section>
+
+    <div class="line-divider"></div>
+
+    <!-- Stats Section -->
+    <section id="stats" class="relative z-10 w-full mb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-14 border-t border-borderColor pt-10" id="stats-section">
+            <div class="space-y-1">
+                <p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="15"
+                    data-suffix="+">0</p>
+                <p class="text-sm text-textMain font-medium">Anos de experiência</p>
+                <p class="text-xs text-textMuted">Atuação em TI e Telecom</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="500"
+                    data-suffix="+">0</p>
+                <p class="text-sm text-textMain font-medium">Equipamentos atendidos</p>
+                <p class="text-xs text-textMuted">PCs, notebooks e redes estruturadas</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="50"
+                    data-suffix="+">0</p>
+                <p class="text-sm text-textMain font-medium">Projetos concluidos</p>
+                <p class="text-xs text-textMuted">Consultoria de TI e suporte técnico</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-4xl sm:text-5xl text-brand tracking-tight font-bold stat-number" data-target="98"
+                    data-suffix="%">0</p>
+                <p class="text-sm text-textMain font-medium">Foco em resultado</p>
+                <p class="text-xs text-textMuted">Desempenho e estabilidade</p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Process Section -->
+    <section id="processo"
+        class="sm:px-6 lg:px-8 sm:mt-24 lg:mt-32 sm:mb-24 lg:mb-32 sm:pt-12 lg:pt-16 sm:pr-6 sm:pb-12 lg:pb-16 sm:pl-6 mt-16 mr-auto mb-16 ml-auto pt-8 pr-4 pb-8 pl-4 gs-reveal opacity-0 translate-y-10 relative z-10 border-y border-borderColor bg-bgSurface/20">
+        <style>
+            #processo .ring-2 {
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            #processo .ring-2:hover {
+                transform: scale(1.03);
+                box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+            }
+
+            #processo .ring-2 i {
+                transition: transform 0.3s ease;
+            }
+
+            #processo .ring-2:hover i {
+                transform: scale(1.2);
+            }
+        </style>
+        <div
+            class="relative overflow-hidden sm:p-8 lg:p-12 bg-bgSurface max-w-7xl ring-borderDarker ring-1 rounded-2xl sm:rounded-3xl mx-auto pt-6 sm:pt-8 pr-4 sm:pr-8 pb-6 sm:pb-8 pl-4 sm:pl-8">
+            <div class="flex flex-col gap-6 sm:gap-8 mb-8 sm:mb-12">
+                <div class="text-center sm:text-left flex flex-col items-center sm:items-start">
+                    <div
+                        class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full pt-1.5 pr-4 pb-1.5 pl-4 items-center w-max">
+                        Como Trabalhamos
+                        <span class="relative flex h-2 w-2 ml-1">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                        </span>
+                    </div>
+                    <h2
+                        class="mt-4 sm:mt-5 text-2xl sm:text-4xl lg:text-5xl text-textMain tracking-tight sm:tracking-tighter font-bold">
+                        Solução Exata. Sem Enrolação.</h2>
+                </div>
+                <p
+                    class="text-sm sm:text-base lg:text-lg text-textMuted max-w-full sm:max-w-[55ch] text-center sm:text-left mx-auto sm:mx-0">
+                    Não trocamos peças por tentativa e erro. Nosso método garante que o verdadeiro defeito seja
+                    encontrado e resolvido de forma definitiva, para você não ter mais dor de cabeça.
                 </p>
             </div>
 
-            
+
             <!-- Timeline -->
             <div class="mt-6 sm:mt-8">
-                <h3 class="text-lg sm:text-xl font-bold text-textMain mb-8 sm:mb-12 lg:mb-16 text-center sm:text-left">Como funciona nosso atendimento</h3>
-                
+                <h3 class="text-lg sm:text-xl font-bold text-textMain mb-8 sm:mb-12 lg:mb-16 text-center sm:text-left">
+                    Como funciona nosso atendimento</h3>
+
                 <!-- Mobile Timeline (vertical) -->
                 <div class="sm:hidden space-y-6">
                     <div class="flex items-start gap-4">
                         <div class="relative">
-                            <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
                                 <i data-lucide="search" class="w-5 h-5 text-brand"></i>
                             </div>
                         </div>
@@ -552,14 +1102,16 @@
                             <div class="flex items-center gap-2 text-[10px] text-textMuted mb-2 font-bold uppercase">
                                 <span class="h-1.5 w-1.5 rounded-full bg-brand"></span> Triagem
                             </div>
-                            <p class="text-sm text-textMain mb-2">Conversamos com você para entender os sintomas e registramos o equipamento.</p>
+                            <p class="text-sm text-textMain mb-2">Conversamos com você para entender os sintomas e
+                                registramos o equipamento.</p>
                             <div class="text-xs text-textMuted">Até 24h úteis</div>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-start gap-4">
                         <div class="relative">
-                            <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-blue-500/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
                                 <i data-lucide="activity" class="w-5 h-5 text-blue-500"></i>
                             </div>
                         </div>
@@ -567,14 +1119,16 @@
                             <div class="flex items-center gap-2 text-[10px] text-textMuted mb-2 font-bold uppercase">
                                 <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span> Diagnóstico
                             </div>
-                            <p class="text-sm text-textMain mb-2">Testamos os componentes em laboratório para descobrir a causa exata do defeito.</p>
+                            <p class="text-sm text-textMain mb-2">Testamos os componentes em laboratório para descobrir
+                                a causa exata do defeito.</p>
                             <div class="text-xs text-textMuted">1 a 3 dias úteis</div>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-start gap-4">
                         <div class="relative">
-                            <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-purple-500/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-purple-500/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
                                 <i data-lucide="cpu" class="w-5 h-5 text-purple-500"></i>
                             </div>
                         </div>
@@ -582,14 +1136,16 @@
                             <div class="flex items-center gap-2 text-[10px] text-textMuted mb-2 font-bold uppercase">
                                 <span class="h-1.5 w-1.5 rounded-full bg-purple-500"></span> O Reparo
                             </div>
-                            <p class="text-sm text-textMain mb-2">Após sua aprovação, consertamos o problema na raiz e fazemos as melhorias necessárias.</p>
+                            <p class="text-sm text-textMain mb-2">Após sua aprovação, consertamos o problema na raiz e
+                                fazemos as melhorias necessárias.</p>
                             <div class="text-xs text-textMuted">Mediante aprovação</div>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-start gap-4">
                         <div class="relative">
-                            <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand-light/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand-light/50 bg-bgSurface2 flex-shrink-0 flex items-center justify-center">
                                 <i data-lucide="check-circle" class="w-5 h-5 text-brand-light"></i>
                             </div>
                         </div>
@@ -597,7 +1153,8 @@
                             <div class="flex items-center gap-2 text-[10px] text-textMuted mb-2 font-bold uppercase">
                                 <span class="h-1.5 w-1.5 rounded-full bg-brand-light"></span> Testes Finais
                             </div>
-                            <p class="text-sm text-textMain mb-2">Colocamos o equipamento sob estresse máximo para ter certeza de que está 100% estável.</p>
+                            <p class="text-sm text-textMain mb-2">Colocamos o equipamento sob estresse máximo para ter
+                                certeza de que está 100% estável.</p>
                             <div class="text-xs text-textMuted">24h a 48h úteis</div>
                         </div>
                     </div>
@@ -605,257 +1162,226 @@
 
                 <!-- Desktop Timeline (horizontal) -->
                 <div class="hidden sm:block relative">
-                    <div class="absolute top-6 sm:top-8 left-0 right-0 h-px bg-gradient-to-r from-borderColor via-textMuted/20 to-borderColor"></div>
-                    
+                    <div
+                        class="absolute top-6 sm:top-8 left-0 right-0 h-px bg-gradient-to-r from-borderColor via-textMuted/20 to-borderColor">
+                    </div>
+
                     <div class="grid grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
                         <div class="flex flex-col gap-3 sm:gap-4 text-center items-center">
                             <div class="relative">
-                                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-brand/50 bg-bgSurface2 flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-brand/50 bg-bgSurface2 flex items-center justify-center">
                                     <i data-lucide="search" class="w-6 h-6 sm:w-8 sm:h-8 text-brand"></i>
                                 </div>
                             </div>
-                            <div class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
+                            <div
+                                class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
                                 <span class="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-brand"></span> Triagem
                             </div>
-                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Conversamos com você para entender os sintomas e registramos o equipamento.</p>
+                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Conversamos com
+                                você para entender os sintomas e registramos o equipamento.</p>
                             <div class="text-xs text-textMuted font-bold">Até 24h úteis</div>
                         </div>
-                        
+
                         <div class="flex flex-col items-center gap-3 sm:gap-4 text-center">
                             <div class="relative">
-                                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-blue-500/50 bg-bgSurface2 flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-blue-500/50 bg-bgSurface2 flex items-center justify-center">
                                     <i data-lucide="activity" class="w-6 h-6 sm:w-8 sm:h-8 text-blue-500"></i>
                                 </div>
                             </div>
-                            <div class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
+                            <div
+                                class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
                                 <span class="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-blue-500"></span> Diagnóstico
                             </div>
-                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Testamos os componentes em laboratório para descobrir a causa exata do defeito.</p>
+                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Testamos os
+                                componentes em laboratório para descobrir a causa exata do defeito.</p>
                             <div class="text-xs text-textMuted font-bold">1 a 3 dias úteis</div>
                         </div>
-                        
+
                         <div class="flex flex-col items-center gap-3 sm:gap-4 text-center">
                             <div class="relative">
-                                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-purple-500/50 bg-bgSurface2 flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-purple-500/50 bg-bgSurface2 flex items-center justify-center">
                                     <i data-lucide="cpu" class="w-6 h-6 sm:w-8 sm:h-8 text-purple-500"></i>
                                 </div>
                             </div>
-                            <div class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
+                            <div
+                                class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
                                 <span class="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-purple-500"></span> O Reparo
                             </div>
-                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Após sua aprovação, consertamos o problema na raiz e fazemos as melhorias necessárias.</p>
+                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Após sua aprovação,
+                                consertamos o problema na raiz e fazemos as melhorias necessárias.</p>
                             <div class="text-xs text-textMuted font-bold">Mediante aprovação</div>
                         </div>
-                        
+
                         <div class="flex flex-col items-center gap-3 sm:gap-4 text-center">
                             <div class="relative">
-                                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-brand-light/50 bg-bgSurface2 flex items-center justify-center">
+                                <div
+                                    class="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 sm:ring-4 ring-brand-light/50 bg-bgSurface2 flex items-center justify-center">
                                     <i data-lucide="check-circle" class="w-6 h-6 sm:w-8 sm:h-8 text-brand-light"></i>
                                 </div>
                             </div>
-                            <div class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
-                                <span class="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-brand-light"></span> Testes Finais
+                            <div
+                                class="flex items-center justify-center gap-2 text-[10px] sm:text-[11px] text-textMuted font-bold uppercase">
+                                <span class="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-brand-light"></span> Testes
+                                Finais
                             </div>
-                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Colocamos o equipamento sob estresse máximo para ter certeza de que está 100% estável.</p>
+                            <p class="leading-relaxed text-xs sm:text-sm text-textMain px-1 sm:px-2">Colocamos o
+                                equipamento sob estresse máximo para ter certeza de que está 100% estável.</p>
                             <div class="text-xs text-textMuted font-bold">24h a 48h úteis</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-           
-        </div>
-    </section>
 
-    <!-- Trabalhos Executados / Portfolio -->
-    <section id="portfolio" class="py-32 bg-bgSurface2 relative z-10 border-b border-borderColor overflow-hidden">
-        <div class="text-center mb-16 gs-reveal opacity-0 translate-y-10 px-6 flex flex-col items-center">
-            <div class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-6 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
-                Casos de Sucesso
-                <span class="relative flex h-2 w-2 ml-1">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
-                </span>
-            </div>
-            <h3 class="font-bold text-3xl md:text-4xl text-textMain tracking-tight">Resultados que Falam por Si.</h3>
-            <p class="text-textMuted text-sm md:text-base mt-4 max-w-2xl mx-auto">Assista e comprove o nível de exigência técnica que aplicamos. O que para alguns é perfeccionismo, para nós é o padrão.</p>
-        </div>
-
-        <div class="relative py-4 group gs-reveal opacity-0 translate-y-10">
-            <style>
-                @keyframes marquee {
-                    from { transform: translateX(0); }
-                    to { transform: translateX(-50%); }
-                }
-            </style>
-            <!-- Fade Edges -->
-            <div class="absolute inset-y-0 left-0 w-16 md:w-48 z-10 bg-gradient-to-r from-bgSurface2 to-transparent pointer-events-none"></div>
-            <div class="absolute inset-y-0 right-0 w-16 md:w-48 z-10 bg-gradient-to-l from-bgSurface2 to-transparent pointer-events-none"></div>
-            
-            <div class="flex gap-4 md:gap-6 px-2 w-max hover:[animation-play-state:paused] transition-all duration-300" style="animation: marquee 40s linear infinite;">
-                
-                <!-- Original Items -->
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop" alt="Manutenção PC Gamer High-End" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">PC Gamer</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, desoxidação e aplicação de metal líquido para máxima performance.</p>
-                    </div>
-                </div>
-
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop" alt="Reparo de Notebook" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">Notebooks</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Placa-Mãe</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de componentes, dobradiças e upgrade de SSD.</p>
-                    </div>
-                </div>
-
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=800&auto=format&fit=crop" alt="Cabeamento Estruturado" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">Cabeamento</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação de rede gigabit para alto tráfego.</p>
-                    </div>
-                </div>
-
-                <!-- Duplicated Items for Loop -->
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=800&auto=format&fit=crop" alt="Manutenção PC Gamer High-End" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">PC Gamer</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, desoxidação e aplicação de metal líquido para máxima performance.</p>
-                    </div>
-                </div>
-
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop" alt="Reparo de Notebook" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">Notebooks</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Placa-Mãe</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de componentes, dobradiças e upgrade de SSD.</p>
-                    </div>
-                </div>
-
-                <div class="relative aspect-square w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
-                    <img src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=800&auto=format&fit=crop" alt="Cabeamento Estruturado" class="w-full h-full object-cover opacity-70 group-hover/card:opacity-100 transition-opacity duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        <div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-brand/20 text-brand text-[0.65rem] font-bold mb-2 uppercase tracking-wider backdrop-blur-sm">Cabeamento</div>
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação de rede gigabit para alto tráfego.</p>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="relative z-10 sm:px-6 lg:px-8 max-w-4xl mr-auto ml-auto pr-4 pb-24 pl-4 pt-32 gs-reveal opacity-0 translate-y-10">
-        <div class="text-center mb-12 flex flex-col items-center">
-            <div class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-6 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
-                Dúvidas Comuns
-                <span class="relative flex h-2 w-2 ml-1">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
-                </span>
+    <section id="faq"
+        class="relative z-10 sm:px-6 lg:px-8 max-w-7xl mx-auto px-4 pb-24 pt-32 gs-reveal opacity-0 translate-y-10">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-16 items-start">
+            <!-- Left Side: Title -->
+            <div class="flex flex-col items-start lg:sticky lg:top-32">
+                <div
+                    class="inline-flex gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand dark:text-brand-light bg-brand/5 border border-brand/10 rounded-full mb-6 pt-1.5 pr-4 pb-1.5 pl-4 items-center">
+                    Tire as suas dúvidas
+                    <span class="relative flex h-2 w-2 ml-1">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                    </span>
+                </div>
+                <h2
+                    class="text-5xl sm:text-6xl lg:text-7xl text-textMain tracking-tighter font-bold leading-[1.1] mb-4">
+                    Perguntas<br>Frequentes</h2>
             </div>
-            <h2 class="text-3xl sm:text-5xl text-textMain tracking-tighter font-bold">Perguntas Frequentes</h2>
-        </div>
-        <div class="space-y-4">
-            
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    1. Quais serviços a NanoTech Pro oferece?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Atuamos com manutenção de computadores e notebooks, montagem de PCs Gamer, upgrades, suporte técnico, cabeamento estruturado, infraestrutura de redes e consultoria em TI para empresas.
-                </div>
-            </details>
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    2. Vocês atendem empresas e clientes residenciais?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Sim. Atendemos tanto usuários domésticos quanto empresas que precisam de soluções tecnológicas confiáveis, seguras e eficientes.
-                </div>
-            </details>
+            <!-- Right Side: Accordion -->
+            <div class="space-y-4 w-full">
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    3. Vocês realizam atendimento presencial?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Sim. Oferecemos atendimento presencial em Jacarezinho, Santo Antônio da Platina e região, além de suporte remoto quando aplicável.
-                </div>
-            </details>
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        1. Quais serviços a NanoTech Pro oferece?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Atuamos com manutenção de computadores e notebooks, montagem de PCs Gamer, upgrades, suporte
+                        técnico, cabeamento estruturado, infraestrutura de redes e consultoria em TI para empresas.
+                    </div>
+                </details>
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    4. Vocês montam PCs Gamer personalizados?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Sim. Desenvolvemos configurações sob medida para cada perfil de jogador, considerando orçamento, desempenho e possibilidade de futuros upgrades.
-                </div>
-            </details>
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        2. Vocês atendem empresas e clientes residenciais?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Sim. Atendemos tanto usuários domésticos quanto empresas que precisam de soluções tecnológicas
+                        confiáveis, seguras e eficientes.
+                    </div>
+                </details>
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    5. Vale a pena fazer upgrade ou é melhor comprar um computador novo?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Depende do equipamento e da necessidade do usuário. Realizamos uma avaliação técnica para indicar a opção com o melhor custo-benefício.
-                </div>
-            </details>
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        3. Vocês realizam atendimento presencial?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Sim. Oferecemos atendimento presencial em Jacarezinho, Santo Antônio da Platina e região, além
+                        de suporte remoto quando aplicável.
+                    </div>
+                </details>
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    6. Como a Consultoria de TI pode ajudar minha empresa?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Ajudamos empresas a melhorar sua infraestrutura tecnológica, reduzir falhas, aumentar a disponibilidade dos sistemas, organizar redes e diminuir custos operacionais relacionados à TI.
-                </div>
-            </details>
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        4. Vocês montam PCs Gamer personalizados?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Sim. Desenvolvemos configurações sob medida para cada perfil de jogador, considerando orçamento,
+                        desempenho e possibilidade de futuros upgrades.
+                    </div>
+                </details>
 
-            <details class="group bg-bgSurface border border-borderDarker rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-textMain hover:text-brand transition-colors">
-                    7. Como solicitar um orçamento?
-                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
-                </summary>
-                <div class="px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                    Basta entrar em contato pelo WhatsApp ou formulário do site. Analisaremos sua necessidade e apresentaremos a solução mais adequada para seu equipamento ou empresa.
-                </div>
-            </details>
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        5. Vale a pena fazer upgrade ou é melhor comprar um computador novo?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Depende do equipamento e da necessidade do usuário. Realizamos uma avaliação técnica para
+                        indicar a opção com o melhor custo-benefício.
+                    </div>
+                </details>
 
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        6. Como a Consultoria de TI pode ajudar minha empresa?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Ajudamos empresas a melhorar sua infraestrutura tecnológica, reduzir falhas, aumentar a
+                        disponibilidade dos sistemas, organizar redes e diminuir custos operacionais relacionados à TI.
+                    </div>
+                </details>
+
+                <details name="faq"
+                    class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
+                    <summary
+                        class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
+                        7. Como solicitar um orçamento?
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        Basta entrar em contato pelo WhatsApp ou formulário do site. Analisaremos sua necessidade e
+                        apresentaremos a solução mais adequada para seu equipamento ou empresa.
+                    </div>
+                </details>
+
+            </div>
         </div>
     </section>
 
     <!-- Social Proof & Final CTA (Replaces Confiança + Final CTA) -->
     <section id="confianca" class="relative z-10 sm:px-6 lg:px-8 max-w-7xl mr-auto ml-auto pr-4 pb-24 pl-4 pt-32">
-        <div class="relative overflow-hidden rounded-3xl bg-bgSurface ring-1 ring-borderDarker gs-reveal opacity-0 translate-y-10 shadow-2xl">
+        <div
+            class="relative overflow-hidden rounded-3xl bg-bgSurface ring-1 ring-borderDarker gs-reveal opacity-0 translate-y-10 shadow-2xl">
             <div class="relative grid grid-cols-1 lg:grid-cols-2">
                 <!-- Text / Benefits -->
-                <div class="p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-borderDarker flex flex-col justify-center">
-                    <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold">Eleve o Nível</p>
-                    <h2 class="mt-4 text-3xl sm:text-5xl text-textMain tracking-tighter font-bold leading-tight">Pronto para extrair o máximo do seu setup?</h2>
-                    <p class="mt-4 text-base text-textMuted max-w-md leading-relaxed">Pare de perder dinheiro com máquinas paradas ou redes instáveis. Fale conosco e entenda o que é manutenção de verdade.</p>
+                <div
+                    class="p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-borderDarker flex flex-col justify-center">
+                    <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold">Solicite uma consultoria</p>
+                    <h2 class="mt-4 text-3xl sm:text-5xl text-textMain tracking-tighter font-bold leading-tight">Seu computador está lento ou sua empresa enfrenta problemas de TI?</h2>
+                    <p class="mt-4 text-base text-textMuted max-w-md leading-relaxed">Solicite uma avaliação e descubra como melhorar desempenho, estabilidade e produtividade.</p>
 
                     <ul class="mt-8 space-y-4">
                         <li class="flex items-center gap-3 text-textMain font-medium">
@@ -874,73 +1400,104 @@
                 </div>
 
                 <!-- Right Side: Contact Form -->
-                <form class="p-8 sm:p-12 space-y-5 bg-bgSurface2 flex flex-col justify-center relative overflow-hidden" onsubmit="sendWhatsApp(event)">
+                <form id="whatsappForm" class="p-8 sm:p-12 space-y-5 bg-bgSurface2 flex flex-col justify-center relative overflow-hidden" onsubmit="sendWhatsApp(event)">
                     <!-- Decorative background element for form -->
-                    <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand/10 rounded-full blur-[40px] pointer-events-none"></div>
+                    <div
+                        class="absolute -top-24 -right-24 w-48 h-48 bg-brand/10 rounded-full blur-[40px] pointer-events-none">
+                    </div>
 
                     <div class="grid grid-cols-1 gap-5">
                         <label class="block group">
-                            <span class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
+                            <span
+                                class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
                                 <i data-lucide="user" class="w-4 h-4"></i> Nome Completo
                             </span>
                             <div class="relative">
-                                <input type="text" name="name" required pattern="[a-zA-ZÀ-ÿ\s]{3,}" title="Digite pelo menos 3 letras (apenas letras e espaços)." class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300" placeholder="Como prefere ser chamado?">
+                                <input type="text" id="nome" name="name" required pattern="[a-zA-ZÀ-ÿ\s]{3,}"
+                                    title="Digite pelo menos 3 letras (apenas letras e espaços)."
+                                    class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300"
+                                    placeholder="Como prefere ser chamado?">
                             </div>
                         </label>
                     </div>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <label class="block group">
-                            <span class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
+                            <span
+                                class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
                                 <i data-lucide="smartphone" class="w-4 h-4"></i> WhatsApp
                             </span>
                             <div class="relative">
-                                <input type="tel" name="contato" required pattern="^\(?[1-9]{2}\)?\s?[0-9]{4,5}\-?[0-9]{4}$" title="Formato esperado: (DD) 9XXXX-XXXX ou apenas números." class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300" placeholder="(00) 00000-0000">
+                                <input type="tel" id="whatsapp" name="contato" required
+                                    pattern="^[0-9]{11}$"
+                                    maxlength="11"
+                                    title="Digite exatamente 11 números, incluindo o DDD (ex: 43999990000)."
+                                    class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300"
+                                    placeholder="Ex: 43999990000">
                             </div>
                         </label>
                         <label class="block group">
-                            <span class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
+                            <span
+                                class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
                                 <i data-lucide="mail" class="w-4 h-4"></i> E-mail
                             </span>
                             <div class="relative">
-                                <input type="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Digite um e-mail válido (ex: contato@exemplo.com)." class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300" placeholder="seu@melhoremail.com">
+                                <input type="email" id="email" name="email" required
+                                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                                    title="Digite um e-mail válido (ex: contato@exemplo.com)."
+                                    class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300"
+                                    placeholder="seu@melhoremail.com">
                             </div>
                         </label>
                     </div>
 
                     <label class="block group">
-                        <span class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
+                        <span
+                            class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
                             <i data-lucide="cpu" class="w-4 h-4"></i> Serviço Desejado
                         </span>
                         <div class="relative">
-                            <select name="servico" required class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300 appearance-none cursor-pointer">
-                                <option value="" disabled selected class="bg-bgBase text-textMuted">Selecione o que você precisa...</option>
-                                <option value="PC Gamer" class="bg-bgBase text-textMain">Montagem / Reparo PC Gamer</option>
-                                <option value="Notebook" class="bg-bgBase text-textMain">Reparo / Upgrade de Notebook</option>
-                                <option value="Consultoria de TI" class="bg-bgBase text-textMain">Consultoria / Infraestrutura de TI</option>
-                                <option value="Outros / Orçamento" class="bg-bgBase text-textMain">Outros / Orçamento Geral</option>
+                            <select id="servico" name="servico" required
+                                class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300 appearance-none cursor-pointer">
+                                <option value="" disabled selected class="bg-bgBase text-textMuted">Selecione o que você
+                                    precisa...</option>
+                                <option value="PC Gamer" class="bg-bgBase text-textMain">Montagem / Reparo PC Gamer
+                                </option>
+                                <option value="Notebook" class="bg-bgBase text-textMain">Reparo / Upgrade de Notebook
+                                </option>
+                                <option value="Consultoria de TI" class="bg-bgBase text-textMain">Consultoria /
+                                    Infraestrutura de TI</option>
+                                <option value="Outros / Orçamento" class="bg-bgBase text-textMain">Outros / Orçamento
+                                    Geral</option>
                             </select>
-                            <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-textMuted group-focus-within:text-brand transition-colors">
+                            <div
+                                class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-textMuted group-focus-within:text-brand transition-colors">
                                 <i data-lucide="chevron-down" class="w-5 h-5"></i>
                             </div>
                         </div>
                     </label>
 
                     <label class="block group">
-                        <span class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
+                        <span
+                            class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
                             <i data-lucide="align-left" class="w-4 h-4"></i> Detalhes da Necessidade
                         </span>
                         <div class="relative">
-                            <textarea name="necessidade" required rows="3" class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300 resize-none" placeholder="Descreva o defeito, a ideia do seu PC ou o desafio da sua empresa..."></textarea>
+                            <textarea id="mensagem" name="necessidade" required rows="3"
+                                class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300 resize-none"
+                                placeholder="Descreva o defeito, a ideia do seu PC ou o desafio da sua empresa..."></textarea>
                         </div>
                     </label>
 
                     <div class="pt-6 mt-auto">
-                        <button type="submit" class="group/btn relative w-full overflow-hidden rounded-xl bg-brand text-white font-bold tracking-wide transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(124,58,237,0.4)]">
+                        <button type="submit"
+                            class="group/btn relative w-full overflow-hidden rounded-xl bg-brand text-white font-bold tracking-wide transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(124,58,237,0.4)]">
                             <span class="relative z-10 flex items-center justify-center gap-3 px-8 py-4">
-                                Enviar para Especialista <i data-lucide="send" class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
+                                Enviar para Especialista <i data-lucide="send"
+                                    class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
                             </span>
-                            <span class="absolute inset-0 z-0 bg-gradient-to-r from-brand-light via-brand to-purple-700 opacity-0 transition-opacity duration-500 group-hover/btn:opacity-100"></span>
+                            <span
+                                class="absolute inset-0 z-0 bg-gradient-to-r from-brand-light via-brand to-purple-700 opacity-0 transition-opacity duration-500 group-hover/btn:opacity-100"></span>
                         </button>
                     </div>
                 </form>
@@ -953,48 +1510,74 @@
     <!-- Footer -->
     <footer class="bg-bgBase border-t border-borderColor pt-20 pb-10 relative z-10">
         <div class="container mx-auto px-6 lg:px-12">
-            <div class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-borderColor pb-16 mb-8">
+            <div
+                class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-borderColor pb-16 mb-8">
                 <div class="max-w-xs">
                     <a href="#" class="flex items-center gap-3 mb-6">
                         <div class="w-2 h-6 bg-brand rounded-sm"></div>
-                        <span class="font-bold text-xl tracking-tight text-textMain uppercase">Nano<span class="text-brand">Tech</span> Pro <span class="text-sm font-medium text-textMuted normal-case ml-1">Tecnologia</span></span>
+                        <span class="font-bold text-xl tracking-tight text-textMain uppercase">Nano<span
+                                class="text-brand">Tech</span> Pro <span
+                                class="text-sm font-medium text-textMuted normal-case ml-1">Tecnologia</span></span>
                     </a>
-                    <p class="text-textMuted text-sm leading-relaxed mb-6">
-                        Laboratório técnico de precisão. Especialistas em PC Gamer, Notebook e Consultoria de TI em Jacarezinho e Santo Antônio da Platina.
-                    </p>
-                    
+                    <p
+                        class="flex items-center gap-2 text-sm text-textMain font-light hover:text-brand transition-colors mb-2">
+                        Especialistas em PCs Gamer e notebooks. Montagem, manutenção, upgrades e suporte técnico com
+                        atendimento em Jacarezinho e Santo Antônio da Platina. </p>
+
                 </div>
                 <div class="flex flex-col items-start md:items-start">
                     <p class="text-[0.85rem] text-textMuted font-bold uppercase tracking-wider mb-4">Mapa do Site</p>
                     <nav class="flex flex-col gap-3">
                         <a href="#" class="text-sm text-textMain hover:text-brand transition-colors">Início</a>
 
-                        <a href="#expertise" class="text-sm text-textMain hover:text-brand transition-colors">Soluções</a>
-                        <a href="#processo" class="text-sm text-textMain hover:text-brand transition-colors">Processo</a>
-                        <a href="#portfolio" class="text-sm text-textMain hover:text-brand transition-colors">Resultados</a>
-                        <a href="#faq" class="text-sm text-textMain hover:text-brand transition-colors">Perguntas Frequentes</a>
-                        <a href="#" onclick="window.open('politica-privacidade.html', '_blank', 'width=800,height=800'); return false;" class="text-sm text-textMain hover:text-brand transition-colors">Política de Privacidade</a>
+                        <a href="#expertise"
+                            class="text-sm text-textMain hover:text-brand transition-colors">Soluções</a>
+                        <a href="#portfolio"
+                            class="text-sm text-textMain hover:text-brand transition-colors">Resultados</a>
+                        <a href="#processo"
+                            class="text-sm text-textMain hover:text-brand transition-colors">Processo</a>
+                        <a href="#faq" class="text-sm text-textMain hover:text-brand transition-colors">Perguntas
+                            Frequentes</a>
+                        <a href="#"
+                            onclick="window.open('politica-privacidade.html', '_blank', 'width=800,height=800'); return false;"
+                            class="text-sm text-textMain hover:text-brand transition-colors">Política de Privacidade</a>
                     </nav>
                 </div>
 
                 <div class="flex flex-col items-start md:items-end">
-                    <p class="text-[0.85rem] text-textMuted font-bold uppercase tracking-wider mb-4">Atendimento</p>
+                    <p class="text-[0.85rem] text-textMuted font-bold uppercase tracking-wider mb-4">contato</p>
 
-                    
-                    <a href="https://wa.me/5543991059128" target="_blank" class="flex items-center gap-3 text-sm text-textMain font-medium hover:text-brand transition-colors mb-2">
+
+                    <a href="https://wa.me/5543991059128" target="_blank"
+                        class="flex items-center gap-3 text-sm text-textMain font-medium hover:text-brand transition-colors mb-2">
                         <i data-lucide="message-circle" class="w-6 h-6"></i>(43) 99105-9128
                     </a>
-                    <p class="flex items-center gap-2 text-sm text-textMain font-light hover:text-brand transition-colors mb-2">
-                        <i data-lucide="map-pin" class="w-6 h-6"></i>Jacarezinho e Santo Antônio da Platina
+
+                    <p
+                        class="flex items-center gap-2 text-sm text-textMain text-left font-light hover:text-brand transition-colors mb-2">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>Rua João Abujanra, 1685 - Maria Estela. Jacarezinho
+                        - PR
                     </p>
-                    
+
+                    <p
+                        class="flex items-center gap-2 text-sm text-textMain text-left font-light hover:text-brand transition-colors mb-2">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>Atendimento com horário agendado, garantindo
+                        atenção exclusiva para cada cliente.
+                    </p>
+
                 </div>
             </div>
 
             <div class="flex flex-col justify-center items-center gap-6 text-[0.85rem] text-textMuted text-center">
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="group flex w-full items-center justify-center px-6 gap-2 rounded-[0.625rem] text-sm font-bold uppercase leading-[16.41px] text-white transition-colors md:w-fit disabled:cursor-not-allowed disabled:opacity-75 py-4 max-h-13 bg-transparent hover:bg-gray-800">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="group flex w-full items-center justify-center px-6 gap-2 rounded-[0.625rem] text-sm font-bold uppercase leading-[16.41px] text-white transition-colors md:w-fit disabled:cursor-not-allowed disabled:opacity-75 py-4 max-h-13 bg-transparent hover:bg-gray-800">
                     <span class="text-textMuted text-[0.85rem] leading-relaxed">Voltar ao topo</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-gray-200"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="h-5 w-5 text-gray-200">
+                        <path d="m5 12 7-7 7 7"></path>
+                        <path d="M12 19V5"></path>
+                    </svg>
                 </button>
                 <p>&copy; 2026 NanoTech Pro Tecnologia. <br class="block sm:hidden"> Todos os direitos reservados.</p>
             </div>
@@ -1004,20 +1587,24 @@
     <!-- GSAP Scripts & Theme Toggle Logic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
+
     <!-- External JS -->
     <script src="main.js"></script>
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-[26rem] z-[100] bg-bgSurface/95 backdrop-blur-md border border-borderDarker p-6 rounded-2xl shadow-2xl flex flex-col gap-5 translate-y-32 opacity-0 transition-all duration-700 ease-out">
+    <div id="cookie-banner"
+        class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-[26rem] z-[100] bg-bgSurface/95 backdrop-blur-md border border-borderDarker p-6 rounded-2xl shadow-2xl flex flex-col gap-5 translate-y-32 opacity-0 transition-all duration-700 ease-out">
         <div>
             <h4 class="text-textMain font-bold text-sm mb-2 flex items-center gap-2">
                 <i data-lucide="shield-check" class="w-5 h-5 text-brand"></i> Privacidade e Proteção de Dados
             </h4>
             <p class="text-textMuted text-[0.8rem] leading-relaxed mb-3">
-                Para oferecer uma experiência de navegação otimizada, utilizamos cookies essenciais e analíticos. Ao continuar, você concorda com a nossa forma de tratamento de dados, em conformidade com a LGPD.
+                Para oferecer uma experiência de navegação otimizada, utilizamos cookies essenciais e analíticos. Ao
+                continuar, você concorda com a nossa forma de tratamento de dados, em conformidade com a LGPD.
             </p>
-            <a href="#" onclick="window.open('politica-privacidade.html', '_blank', 'width=800,height=800'); return false;" class="text-brand text-xs font-bold hover:text-brand-light hover:underline transition-colors">
+            <a href="#"
+                onclick="window.open('politica-privacidade.html', '_blank', 'width=800,height=800'); return false;"
+                class="text-brand text-xs font-bold hover:text-brand-light hover:underline transition-colors">
                 Ler Política Completa
             </a>
         </div>
@@ -1028,39 +1615,54 @@
                 <input type="checkbox" checked disabled class="accent-brand w-4 h-4 rounded">
             </label>
             <label class="flex justify-between items-center cursor-pointer group">
-                <span class="text-xs text-textMuted group-hover:text-textMain transition-colors">Analíticos e Desempenho</span>
+                <span class="text-xs text-textMuted group-hover:text-textMain transition-colors">Analíticos e
+                    Desempenho</span>
                 <input type="checkbox" id="cookie-analytics" class="accent-brand w-4 h-4 rounded cursor-pointer">
             </label>
             <label class="flex justify-between items-center cursor-pointer group">
-                <span class="text-xs text-textMuted group-hover:text-textMain transition-colors">Marketing e Publicidade</span>
+                <span class="text-xs text-textMuted group-hover:text-textMain transition-colors">Marketing e
+                    Publicidade</span>
                 <input type="checkbox" id="cookie-marketing" class="accent-brand w-4 h-4 rounded cursor-pointer">
             </label>
-            <button id="save-cookie-prefs" class="mt-2 w-full bg-bgSurface2 hover:bg-borderDarker border border-borderDarker text-textMain text-xs font-bold py-2 rounded-lg transition-colors">
+            <button id="save-cookie-prefs"
+                class="mt-2 w-full bg-bgSurface2 hover:bg-borderDarker border border-borderDarker text-textMain text-xs font-bold py-2 rounded-lg transition-colors">
                 Salvar Preferências
             </button>
         </div>
 
         <div class="flex flex-col gap-2 w-full" id="cookie-main-buttons">
             <div class="flex items-center gap-3 w-full">
-                <button id="accept-cookies" class="flex-1 bg-brand hover:bg-brand-light text-white text-xs font-bold py-3 px-4 rounded-lg transition-colors shadow-lg shadow-brand/20">
+                <button id="accept-cookies"
+                    class="flex-1 bg-brand hover:bg-brand-light text-white text-xs font-bold py-3 px-4 rounded-lg transition-colors shadow-lg shadow-brand/20">
                     Aceitar Todos
                 </button>
-                <button id="reject-cookies" class="flex-1 bg-transparent hover:bg-bgSurface2 border border-borderDarker text-textMain text-xs font-bold py-3 px-4 rounded-lg transition-colors">
+                <button id="reject-cookies"
+                    class="flex-1 bg-transparent hover:bg-bgSurface2 border border-borderDarker text-textMain text-xs font-bold py-3 px-4 rounded-lg transition-colors">
                     Somente Essenciais
                 </button>
             </div>
-            <button id="customize-cookies" class="w-full text-textMuted hover:text-textMain text-[0.7rem] font-medium py-1 transition-colors underline decoration-borderDarker hover:decoration-textMain underline-offset-4">
+            <button id="customize-cookies"
+                class="w-full text-textMuted hover:text-textMain text-[0.7rem] font-medium py-1 transition-colors underline decoration-borderDarker hover:decoration-textMain underline-offset-4">
                 Personalizar Cookies
             </button>
         </div>
     </div>
 
     <!-- Floating WhatsApp CTA -->
-    <a href="https://wa.me/5543991059128?text=Ol%C3%A1%2C%20NanoTech%20Pro%21%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico." target="_blank" class="fixed bottom-[14px] right-[14px] w-[58px] h-[58px] z-[90] bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl shadow-[#25D366]/30 transition-all duration-300 hover:scale-110 flex items-center justify-center group" aria-label="Falar com Especialista">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-        <span class="absolute right-full mr-4 bg-bgSurface text-textMain text-sm font-bold py-2 px-4 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-borderDarker">
+    <a href="https://wa.me/5543991059128?text=Ol%C3%A1%2C%20NanoTech%20Pro%21%20Gostaria%20de%20de%20uma%20avaliação%20técnica."
+        target="_blank"
+        class="fixed bottom-[14px] right-[14px] w-[58px] h-[58px] z-[90] bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl shadow-[#25D366]/30 transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+        aria-label="Falar com Especialista">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"
+            class="w-7 h-7">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+        <span
+            class="absolute right-full mr-4 bg-bgSurface text-textMain text-sm font-bold py-2 px-4 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-borderDarker">
             Fale com um Especialista
         </span>
     </a>
 </body>
+
 </html>
