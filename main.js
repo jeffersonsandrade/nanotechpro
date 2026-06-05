@@ -7,7 +7,7 @@ function sendWhatsApp(event) {
     const service = form.servico.value;
     const necessidade = form.necessidade.value;
     
-    const message = `Olá, NanoTech Pro! Gostaria de agendar um diagnóstico.%0A%0A*Nome:* ${name}%0A*Contato:* ${contact}%0A*E-mail:* ${email}%0A*Serviço:* ${service}%0A*Necessidade:* ${necessidade}`;
+    const message = `Olá, NanoTech Pro! Gostaria de solicitar uma avaliação técnica.%0A%0A*Nome:* ${name}%0A*Contato:* ${contact}%0A*E-mail:* ${email}%0A*Serviço:* ${service}%0A*Necessidade:* ${necessidade}`;
     
     // Redireciona para o WhatsApp
     window.open(`https://wa.me/5543991059128?text=${message}`, '_blank');
@@ -172,8 +172,8 @@ document.getElementById('mobile-menu-btn').addEventListener('click', function() 
 document.querySelectorAll('header a, header button').forEach(item => {
     item.addEventListener('click', () => {
         const btn = document.getElementById('mobile-menu-btn');
-        // Ignore if clicking the menu toggle button itself
-        if (item !== btn && !item.closest('#mobile-menu-btn') && window.innerWidth < 1024) {
+        // Ignore if clicking the menu toggle button itself or the theme toggle
+        if (item !== btn && !item.closest('#mobile-menu-btn') && item.id !== 'theme-toggle-desktop' && window.innerWidth < 1024) {
             const nav = document.querySelector('header nav').parentElement;
             if (!nav.classList.contains('hidden')) {
                 btn.click(); // Trigger the close animation
