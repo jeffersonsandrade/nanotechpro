@@ -142,6 +142,9 @@ document.getElementById('mobile-menu-btn').addEventListener('click', function() 
     const isHidden = nav.classList.contains('hidden');
     
     if(isHidden) {
+        this.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
+        lucide.createIcons();
+
         nav.classList.remove('hidden');
         nav.classList.add('flex', 'flex-col', 'absolute', 'top-full', 'left-0', 'w-full', 'bg-bgBase', 'border-b', 'border-borderColor', 'p-6', 'shadow-xl', 'max-h-[85vh]', 'overflow-y-auto');
         nav.querySelector('nav').classList.add('flex-col', 'items-start', 'w-full', 'mb-4');
@@ -153,6 +156,9 @@ document.getElementById('mobile-menu-btn').addEventListener('click', function() 
             { opacity: 1, transform: 'translateY(0)' }
         ], { duration: 300, easing: 'ease-out', fill: 'forwards' });
     } else {
+        this.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+        lucide.createIcons();
+
         const animation = nav.animate([
             { opacity: 1, transform: 'translateY(0)' },
             { opacity: 0, transform: 'translateY(-15px)' }
