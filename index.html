@@ -74,7 +74,7 @@
     }
     </script>
 
-    <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
+    <link rel="icon" type="image/jpeg" href="assets/favicon.png">
 
     <!-- Script Anti-FOUC para carregar o tema antes da renderização -->
     <script>
@@ -140,7 +140,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="relative selection:bg-brand selection:text-white">
+<body class="relative antialiased selection:bg-brand selection:text-white">
 
     <!-- Header -->
     <header class="fixed w-full top-0 z-50 glass-header transition-all duration-300">
@@ -268,7 +268,7 @@
             <!-- Right: Video Container -->
             <div
                 class="gs-hero opacity-0 translate-y-8 relative w-full aspect-[4/5] lg:aspect-auto lg:h-full rounded-2xl overflow-hidden border border-borderDarker shadow-2xl group">
-                <video src="assets/hero_gamer.mp4" autoplay loop playsinline muted
+                <video src="assets/hero_gta6.mp4" autoplay loop playsinline muted
                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></video>
                 <!-- Glow/Sombra sobre o vídeo -->
                 <div
@@ -592,7 +592,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="assets/pc_gamer10.jpeg" alt="PC Gamer" class="w-full h-48 object-cover rounded-xl mb-6">
+                <img src="assets/pc_gamer07.jpeg" alt="PC Gamer" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="gamepad-2" class="w-6 h-6 text-brand"></i></div>
@@ -617,7 +617,7 @@
 
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <img src="assets/acer_nitro.jpg" alt="Notebooks" class="w-full h-48 object-cover rounded-xl mb-6">
+                <img src="assets/acer_nitro.jpg" alt="Notebooks" class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="laptop" class="w-6 h-6 text-brand"></i></div>
@@ -643,7 +643,7 @@
             <article
                 class="card-accent rounded-2xl border border-borderDarker bg-bgSurface p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <img src="assets/consultoria_ti.jpg" alt="Consultoria de TI"
-                    class="w-full h-48 object-cover rounded-xl mb-6">
+                    class="w-full h-[20rem] object-cover max-lg:landscape:object-contain rounded-xl mb-6">
                 <div
                     class="w-12 h-12 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center mb-6">
                     <i data-lucide="briefcase-business" class="w-6 h-6 text-brand"></i></div>
@@ -687,7 +687,7 @@
                 </span>
             </div>
             <h3 class="font-bold text-3xl md:text-4xl text-textMain tracking-tight">Resultados que Falam por Si.</h3>
-            <p class="text-textMuted text-sm md:text-base mt-4 max-w-2xl mx-auto">Assista e comprove o nível de
+            <p class="text-textMuted text-sm md:text-base mt-4 max-w-2xl mx-auto">Veja e comprove o nível de
                 exigência técnica que aplicamos. O que para alguns é perfeccionismo, para nós é o padrão.</p>
         </div>
 
@@ -714,184 +714,133 @@
             <div class="flex gap-4 md:gap-6 w-max hover:[animation-play-state:paused] transition-all duration-300"
                 style="animation: marquee 40s linear infinite;">
 
-                <!-- Set 1 (Original Items) -->
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/pc_gamer02.jpeg" alt="Manutenção PC Gamer High-End"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <!-- Set 1 (Unique Items) -->
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Formatação, backup e limpeza
-                            completa.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Setup Gamer High-End</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Montagem premium, organização de cabos e otimização térmica para o máximo de FPS.</p>
                     </div>
                 </div>
 
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/troca_lcd.jpeg" alt="Reparo de Notebook"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                      
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Carcaça</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de carcaças e
-                            restauração de notebooks.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Substituição de Tela</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Troca de display LCD/LED quebrado por peça original, devolvendo cores perfeitas.</p>
                     </div>
                 </div>
 
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Rack_piso02.jpg" alt="Cabeamento Estruturado"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
-                            de rede gigabit para alto tráfego.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Infraestrutura Corporativa</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Montagem de Rack e certificação de rede gigabit para alto tráfego em empresas.</p>
                     </div>
                 </div>
 
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção PC Gamer High-End"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção Preventiva</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, troca de pasta
-                            térmica e organização de cabos para máxima performance.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Restauração de Carcaça</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Recuperação avançada de dobradiças e plásticos de notebooks danificados.</p>
                     </div>
                 </div>
 
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Reparo_carcaça.jpeg" alt="Upgrade de Notebook"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Upgrade de hardware</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Troca de HD para SSD e formatação
-                            do notebook.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Manutenção Preventiva</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Limpeza profunda e troca de pasta térmica de alta condutividade no seu PC.</p>
                     </div>
                 </div>
 
-                <div
-                    class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
-                    <img src="assets/Rack_parede02.jpeg" alt="Cabeamento Estruturado"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
-                            de rede gigabit para alto tráfego.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Redes para Escritórios</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Instalação de Rack de parede e cabeamento estruturado para médias empresas.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black">
+                    <img src="assets/troca_hd.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Recuperação de Sistema</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Substituição de disco defeituoso, backup de dados e reinstalação limpa do Windows.</p>
                     </div>
                 </div>
 
                 <!-- Set 2 (Duplicated for Loop) -->
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/pc_gamer02.jpeg" alt="Manutenção PC Gamer High-End"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/pc_gamer02.jpeg" alt="Setup Gamer" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção High-End</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Formatação, backup e limpeza
-                            completa.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Setup Gamer High-End</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Montagem premium, organização de cabos e otimização térmica para o máximo de FPS.</p>
                     </div>
                 </div>
 
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/troca_lcd.jpeg" alt="Reparo de Notebook"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/troca_lcd.jpeg" alt="Substituição de Tela" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Reparo de Carcaça</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Recuperação avançada de carcaças e
-                            restauração de notebooks.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Substituição de Tela</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Troca de display LCD/LED quebrado por peça original, devolvendo cores perfeitas.</p>
                     </div>
                 </div>
 
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/Rack_piso02.jpg" alt="Cabeamento Estruturado"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/Rack_piso02.jpg" alt="Infraestrutura Corporativa" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                        
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Estrutura empresarial</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e cabeamento estruturado.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Infraestrutura Corporativa</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Montagem de Rack e certificação de rede gigabit para alto tráfego em empresas.</p>
                     </div>
                 </div>
 
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção PC Gamer High-End"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/Reparo_carcaça.jpeg" alt="Restauração de Carcaça" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                       
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Manutenção Preventiva</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Limpeza completa, troca de pasta
-                            térmica e organização de cabos para máxima performance.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Restauração de Carcaça</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Recuperação avançada de dobradiças e plásticos de notebooks danificados.</p>
                     </div>
                 </div>
 
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/Reparo_carcaça.jpeg" alt="Upgrade de Notebook"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/pc_gamer11.jpeg" alt="Manutenção Preventiva" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                      
-                        <p class="text-white text-base md:text-lg font-bold leading-tight">Upgrade de hardware</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Troca de HD para SSD e formatação
-                            do notebook.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Manutenção Preventiva</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Limpeza profunda e troca de pasta térmica de alta condutividade no seu PC.</p>
                     </div>
                 </div>
 
-                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black"
-                    aria-hidden="true">
-                    <img src="assets/Rack_parede02.jpeg" alt="Cabeamento Estruturado"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300">
-                    </div>
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/Rack_parede01.jpeg" alt="Redes para Escritórios" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
                     <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
-                     
-                        <p class="text-purple-500 text-base md:text-lg font-bold leading-tight">Estrutura Corporativa</p>
-                        <p class="text-gray-300 text-xs md:text-sm mt-1 line-clamp-2">Organização de rack e certificação
-                            de rede gigabit para alto tráfego.</p>
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Redes para Escritórios</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Instalação de Rack de parede e cabeamento estruturado para médias empresas.</p>
+                    </div>
+                </div>
+
+                <div class="relative w-[300px] h-[400px] flex-shrink-0 overflow-hidden rounded-2xl ring-1 ring-borderDarker group/card bg-black" aria-hidden="true">
+                    <img src="assets/troca_hd.jpeg" alt="Recuperação de Sistema" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent pointer-events-none transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 right-4 pointer-events-none transition-transform duration-300">
+                        <p class="text-white text-sm md:text-base font-bold leading-tight">Recuperação de Sistema</p>
+                        <p class="text-gray-300 text-[11px] md:text-xs mt-1 line-clamp-2">Substituição de disco defeituoso, backup de dados e reinstalação limpa do Windows.</p>
                     </div>
                 </div>
 
@@ -908,7 +857,7 @@
             <div
                 class="relative w-full max-w-[300px] lg:max-w-[85%] aspect-[4/5] lg:aspect-auto lg:h-1/2 max-h-[60vh] lg:max-h-none mx-auto border-b lg:border-none border-borderDarker overflow-hidden lg:self-start lg:mt-10 lg:rounded-2xl lg:shadow-lg">
                 <img src="assets/profissional.png" alt="Jefferson Andrade Silva"
-                    class="absolute inset-0 w-full h-full object-cover object-top">
+                    class="absolute inset-0 w-full h-[120%] object-cover object-top">
             </div>
 
             <!-- Right: Text Content -->
@@ -931,7 +880,7 @@
                     </h2>
 
                     <!-- Content -->
-                    <p class="text-textMuted text-sm sm:text-base text-justify leading-relaxed mb-6 max-w-2xl">
+                    <p class="text-textMuted text-sm sm:text-base text-justify leading-relaxed mb-6 max-w-4xl">
                         Profissional especializado em Tecnologia da Informação, com mais de 15 anos de experiência nas
                         áreas de TI e Telecomunicações, atuando no desenvolvimento e implementação de soluções
                         tecnológicas com foco em desempenho, segurança e eficiência operacional. Atende usuários,
@@ -949,14 +898,14 @@
                         <span
                             class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
                                 data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> Tecnologia em
-                            Redes</span>
+                            Redes de Computadores</span>
                         <span
                             class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
-                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA em Gestão de
                             Projetos</span>
                         <span
                             class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
-                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA Gestão de
+                                data-lucide="graduation-cap" class="w-3.5 h-3.5 text-[#b366ff]"></i> MBA emGestão de
                             TI</span>
                         <span
                             class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-bgSurface2 border border-borderColor text-xs sm:text-[12.5px] text-textMuted hover:border-[#b366ff]/50 transition-colors cursor-default"><i
@@ -984,15 +933,14 @@
                                 data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Formatação e otimização
                             de sistemas</li>
                         <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
-                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Projetos de cabeamento
-                            estruturado</li>
+                                data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Projetos de infraestrutura
                         <li class="flex items-center gap-3 text-sm sm:text-[14.5px] text-textMuted"><i
                                 data-lucide="check-circle-2" class="w-4 h-4 text-[#b366ff]"></i> Consultoria e suporte
                             técnico em TI</li>
                     </ul>
 
                     <!-- Highlighted Box -->
-                    <div class="border-l-2 border-[#b366ff] bg-brand/5 p-4 sm:p-5 rounded-r-lg max-w-xl">
+                    <div class="border-l-2 border-[#b366ff] bg-brand/5 p-4 sm:p-5 rounded-r-lg max-w-4xl">
                         <p class="text-textMain font-bold text-[14.5px] sm:text-[15.5px] leading-snug">
                             Tecnologia aplicada com eficiência, estabilidade e soluções que agregam valor para usuários
                             e empresas.
@@ -1266,9 +1214,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        1. Quais serviços a NanoTech Pro oferece?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Quais serviços a NanoTech Pro oferece?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1281,9 +1232,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        2. Vocês atendem empresas e clientes residenciais?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Vocês atendem empresas e clientes residenciais?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1296,9 +1250,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        3. Vocês realizam atendimento presencial?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Vocês realizam atendimento presencial?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1311,9 +1268,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        4. Vocês montam PCs Gamer personalizados?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Vocês montam PCs Gamer personalizados?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1326,9 +1286,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        5. Vale a pena fazer upgrade ou é melhor comprar um computador novo?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Vale a pena fazer upgrade ou é melhor comprar um computador novo?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1341,9 +1304,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        6. Como a Consultoria de TI pode ajudar minha empresa?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Como a Consultoria de TI pode ajudar minha empresa?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1356,9 +1322,12 @@
                     class="group bg-gradient-to-br from-bgSurface2 to-transparent backdrop-blur-md border border-borderDarker rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden transition-all duration-400 hover:border-brand/40 hover:from-brand/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand/20">
                     <summary
                         class="flex items-center justify-between p-6 sm:p-8 cursor-pointer text-lg font-semibold tracking-tight text-textMain group-hover:text-brand transition-colors duration-300">
-                        7. Como solicitar um orçamento?
+                        <span class="flex items-center gap-3">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-brand flex-shrink-0"></i>
+                            Como solicitar um orçamento?
+                        </span>
                         <i data-lucide="chevron-down"
-                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+                            class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
                     <div
                         class="px-6 pb-6 sm:px-8 sm:pb-8 text-textMuted font-light leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -1372,38 +1341,50 @@
     </section>
 
     <!-- Social Proof & Final CTA (Replaces Confiança + Final CTA) -->
-    <section id="confianca" class="relative z-10 sm:px-6 lg:px-8 max-w-7xl mr-auto ml-auto pr-4 pb-24 pl-4 pt-32">
+    <section id="confianca" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div
             class="relative overflow-hidden rounded-3xl bg-bgSurface ring-1 ring-borderDarker gs-reveal opacity-0 translate-y-10 shadow-2xl">
             <div class="relative grid grid-cols-1 lg:grid-cols-2">
-                <!-- Text / Benefits -->
-                <div
-                    class="p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-borderDarker flex flex-col justify-center">
-                    <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold">Solicite uma consultoria</p>
-                    <h2 class="mt-4 text-3xl sm:text-5xl text-textMain tracking-tighter font-bold leading-tight">Seu computador está lento ou sua empresa enfrenta problemas de TI?</h2>
-                    <p class="mt-4 text-base text-textMuted max-w-md leading-relaxed">Solicite uma avaliação e descubra como melhorar desempenho, estabilidade e produtividade.</p>
+                <!-- Text / Benefits & Image -->
+                <div class="p-6 sm:p-8 lg:p-10 xl:p-12 flex flex-col justify-start bg-bgBase h-full">
+                    <p class="text-[11px] uppercase tracking-[0.18em] text-brand font-bold">Atendimento Especializado</p>
+                    
+                    <div class="my-6 relative w-full h-48 sm:h-64 lg:h-72 rounded-2xl overflow-hidden ring-1 ring-borderDarker shadow-xl group">
+                        <!-- Gradient overlay effect -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand/30 to-transparent mix-blend-overlay z-10 transition-opacity duration-700 group-hover:opacity-0"></div>
+                        <img src="assets/form.jpg" alt="Equipamentos de TI" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl xl:text-5xl text-textMain tracking-tighter font-bold leading-tight">Problemas na sua máquina ou falhas na TI da empresa?</h2>
+                    <p class="mt-4 text-base text-textMuted max-w-md leading-relaxed">Não deixe que travamentos limitem sua produtividade. Resolva o problema pela raiz com um diagnóstico transparente e sem achismos.</p>
 
                     <ul class="mt-8 space-y-4">
                         <li class="flex items-center gap-3 text-textMain font-medium">
-                            <div class="h-2 w-2 rounded-full bg-blue-500"></div>
-                            Diagnóstico preciso e laboratorial
+                            <div class="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></div>
+                            Diagnóstico laboratorial e transparente
                         </li>
                         <li class="flex items-center gap-3 text-textMain font-medium">
-                            <div class="h-2 w-2 rounded-full bg-blue-500"></div>
-                            Sem tentativa e erro
+                            <div class="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></div>
+                            Soluções definitivas e sem gambiarras
                         </li>
+                        
                         <li class="flex items-center gap-3 text-textMain font-medium">
-                            <div class="h-2 w-2 rounded-full bg-blue-500"></div>
-                            Reparo a nível de componente
+                            <div class="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></div>
+                            Agilidade para você não ficar parado.
                         </li>
                     </ul>
                 </div>
 
                 <!-- Right Side: Contact Form -->
-                <form id="whatsappForm" class="p-8 sm:p-12 space-y-5 bg-bgSurface2 flex flex-col justify-center relative overflow-hidden" onsubmit="sendWhatsApp(event)">
+                <form id="whatsappForm" class="p-6 sm:p-8 lg:p-10 xl:p-12 space-y-5 bg-bgSurface2 flex flex-col justify-start relative overflow-hidden h-full" onsubmit="sendWhatsApp(event)">
                     <!-- Decorative background element for form -->
                     <div
-                        class="absolute -top-24 -right-24 w-48 h-48 bg-brand/10 rounded-full blur-[40px] pointer-events-none">
+                        class="absolute -top-24 -right-24 w-48 h-[20rem] bg-brand/10 rounded-full blur-[40px] pointer-events-none">
+                    </div>
+
+                    <div class="relative z-10 mb-2">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-textMain tracking-tight">Inicie seu Atendimento</h3>
+                        <p class="text-sm text-textMuted mt-2">Preencha os dados abaixo e fale com nossa equipe.</p>
                     </div>
 
                     <div class="grid grid-cols-1 gap-5">
@@ -1454,7 +1435,7 @@
                     <label class="block group">
                         <span
                             class="text-xs text-textMuted font-bold uppercase tracking-widest mb-2 flex items-center gap-2 transition-colors group-focus-within:text-brand">
-                            <i data-lucide="cpu" class="w-4 h-4"></i> Serviço Desejado
+                            <i data-lucide="settings" class="w-4 h-4"></i> Serviço Desejado
                         </span>
                         <div class="relative">
                             <select id="servico" name="servico" required
@@ -1483,7 +1464,7 @@
                             <i data-lucide="align-left" class="w-4 h-4"></i> Detalhes da Necessidade
                         </span>
                         <div class="relative">
-                            <textarea id="mensagem" name="necessidade" required rows="3"
+                            <textarea id="mensagem" name="necessidade" required rows="5"
                                 class="w-full rounded-xl bg-bgBase border border-borderDarker text-textMain placeholder:text-textMuted/30 px-4 py-3.5 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 hover:border-brand/50 transition-all duration-300 resize-none"
                                 placeholder="Descreva o defeito, a ideia do seu PC ou o desafio da sua empresa..."></textarea>
                         </div>
@@ -1493,7 +1474,7 @@
                         <button type="submit"
                             class="group/btn relative w-full overflow-hidden rounded-xl bg-brand text-white font-bold tracking-wide transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(124,58,237,0.4)]">
                             <span class="relative z-10 flex items-center justify-center gap-3 px-8 py-4">
-                                Enviar para Especialista <i data-lucide="send"
+                                Falar com Especialista Agora <i data-lucide="send"
                                     class="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
                             </span>
                             <span
@@ -1520,9 +1501,9 @@
                                 class="text-sm font-medium text-textMuted normal-case ml-1">Tecnologia</span></span>
                     </a>
                     <p
-                        class="flex items-center gap-2 text-sm text-textMain font-light hover:text-brand transition-colors mb-2">
+                        class="flex items-center gap-2 text-sm text-textMain text-justify font-light hover:text-brand transition-colors mb-2">
                         Especialistas em PCs Gamer e notebooks. Montagem, manutenção, upgrades e suporte técnico com
-                        atendimento em Jacarezinho e Santo Antônio da Platina. </p>
+                        atendimento em Jacarezinho e Santo Antônio da Platina - PR. </p>
 
                 </div>
                 <div class="flex flex-col items-start md:items-start">
@@ -1548,7 +1529,7 @@
                     <p class="text-[0.85rem] text-textMuted font-bold uppercase tracking-wider mb-4">contato</p>
 
 
-                    <a href="https://wa.me/5543991059128" target="_blank"
+                    <a href="https://api.whatsapp.com/send/?phone=5543991059128&text=Ol%C3%A1%2C+NanoTech+Pro%21+Gostaria+de+de+uma+avalia%C3%A7%C3%A3o+t%C3%A9cnica.&type=phone_number&app_absent=0" target="_blank"
                         class="flex items-center gap-3 text-sm text-textMain font-medium hover:text-brand transition-colors mb-2">
                         <i data-lucide="message-circle" class="w-6 h-6"></i>(43) 99105-9128
                     </a>
@@ -1560,9 +1541,8 @@
                     </p>
 
                     <p
-                        class="flex items-center gap-2 text-sm text-textMain text-left font-light hover:text-brand transition-colors mb-2">
-                        <i data-lucide="calendar" class="w-6 h-6"></i>Atendimento com horário agendado, garantindo
-                        atenção exclusiva para cada cliente.
+                        class="flex items-center gap-2 text-sm text-textMain text-justify font-light hover:text-brand transition-colors mb-2">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>Atendimento com horário agendado, exclusivo para cada cliente.
                     </p>
 
                 </div>
@@ -1596,11 +1576,10 @@
         class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-[26rem] z-[100] bg-bgSurface/95 backdrop-blur-md border border-borderDarker p-6 rounded-2xl shadow-2xl flex flex-col gap-5 translate-y-32 opacity-0 transition-all duration-700 ease-out">
         <div>
             <h4 class="text-textMain font-bold text-sm mb-2 flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-5 h-5 text-brand"></i> Privacidade e Proteção de Dados
+                <i data-lucide="cookie" class="w-5 h-5 text-brand"></i> Personalizamos sua experiência!
             </h4>
             <p class="text-textMuted text-[0.8rem] leading-relaxed mb-3">
-                Para oferecer uma experiência de navegação otimizada, utilizamos cookies essenciais e analíticos. Ao
-                continuar, você concorda com a nossa forma de tratamento de dados, em conformidade com a LGPD.
+                Utilizamos cookies para entender melhor suas necessidades, garantir um site mais rápido e oferecer os melhores serviços de TI para o seu perfil. Ao aceitar, você nos ajuda a proporcionar um atendimento sob medida e ofertas exclusivas (em conformidade com a LGPD).
             </p>
             <a href="#"
                 onclick="window.open('politica-privacidade.html', '_blank', 'width=800,height=800'); return false;"
@@ -1649,7 +1628,7 @@
     </div>
 
     <!-- Floating WhatsApp CTA -->
-    <a href="https://wa.me/5543991059128?text=Ol%C3%A1%2C%20NanoTech%20Pro%21%20Gostaria%20de%20de%20uma%20avaliação%20técnica."
+    <a href="https://api.whatsapp.com/send/?phone=5543991059128&text=Ol%C3%A1%2C+NanoTech+Pro%21+Gostaria+de+de+uma+avalia%C3%A7%C3%A3o+t%C3%A9cnica.&type=phone_number&app_absent=0"
         target="_blank"
         class="fixed bottom-[14px] right-[14px] w-[58px] h-[58px] z-[90] bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl shadow-[#25D366]/30 transition-all duration-300 hover:scale-110 flex items-center justify-center group"
         aria-label="Falar com Especialista">
